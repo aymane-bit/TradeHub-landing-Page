@@ -1,112 +1,45 @@
 # Controlled implementation plan
 
-Tasks 001–003 are verified. Task 004 is authorized: the authentic real-product
-showcase using approved captures. Stop after its completion report and review. Later
-rows describe the sequence, not permission to execute.
+Tasks 001–005 are the approved baseline. Task 006 implements the demo-first conversion,
+closing CTA, provisional disclaimer, concise footer, and temporary `/demo` handoff.
+Stop after Task 006 for review. Later rows describe sequence, not authorization.
 
-| Task          | Bounded scope                                                                                                                        | Additional verification                                                                                                             |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
-| 001           | Astro/strict TypeScript, minimal semantic shell, CSS placeholders, tooling, Docker, six required documents, asset directory guidance | Native server, Docker config/build/runtime, static output with no client JavaScript, shell browser checks                           |
-| 002           | Design tokens with documented fallbacks, global layout, header, complete hero                                                        | Brand provenance, responsive hierarchy, keyboard/menu behavior                                                                      |
-| 003           | Fragmentation problem, integrated solution, four product pillars                                                                     | Accurate claims, visible community pillar, responsive sections                                                                      |
-| 004           | Real product showcase using approved captures                                                                                        | Authenticity, redaction, simulated labels, alt text, optimized images, no-JS usability                                              |
-| 005           | Current stage, evidence, founders                                                                                                    | Exact approved bios/achievements, accurate team attribution, equal founder visual weight                                            |
-| 006           | Early-access CTA, contact, footer, provisional disclaimer                                                                            | Approved destinations; no data collection without full approval; no fake contact details                                            |
-| 007           | Responsive, accessibility, performance hardening                                                                                     | Device widths, keyboard, console, overflow, reduced motion, load and layout stability                                               |
-| 008           | SEO, sharing, production configuration, release review                                                                               | Approved domain, canonical, social assets, robots/sitemap decisions, final legal review; publishing requires explicit authorization |
-| Later project | Public interactive demo integration                                                                                                  | Separate scope and approval; no production backend coupling here                                                                    |
+| Task | Bounded scope                                                          | Gate                                                               |
+| ---- | ---------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| 001  | Repository foundation and documentation                                | Static Astro, strict TypeScript, Docker runtime                    |
+| 002  | Design foundation, header, hero                                        | Responsive and keyboard verification                               |
+| 003  | Problem, integrated approach, pillars                                  | Accurate claims and visible community                              |
+| 004  | Authentic product showcase                                             | Approved local captures and simulation labels                      |
+| 005  | Current stage, achievements, founders                                  | Exact attribution and approved portraits                           |
+| 006  | Demo-first conversion, closing CTA, disclaimer, footer, handoff route  | Both routes static, truthful, accessible, and non-collecting       |
+| 007  | Existing TradeHub application and demo architecture audit              | Audit only; choose and document the safest architecture            |
+| 008  | Isolated demo environment and seeded data                              | Production isolation, deterministic seed/reset                     |
+| 009  | Interactive TradeHub demo experience                                   | Scoped simulated interactions using approved architecture          |
+| 010  | Demo integration, security, privacy, resilience, responsive validation | Replace handoff; protect production boundaries                     |
+| 011  | Whole-site accessibility, performance, cross-page hardening            | Keyboard, semantics, responsive and performance budgets            |
+| 012  | SEO, production configuration, legal/content review, release readiness | Domain, metadata, legal outcomes; deployment separately authorized |
 
-## Gate for every task
+## Task 006 verification gate
 
-Run `npm run format:check`, `npm run lint`, `npm run check`, and `npm run build`.
-Inspect the complete diff and all new/untracked files; run `git diff --check` and
-`git status --short`. Confirm no unrelated changes, secrets, credentials, private
-documents, or unapproved assets. Report exact failures or unavailable checks with
-reasons rather than marking them passed.
+Run `npm ci`, formatting, lint, Astro/TypeScript checks, production build, Docker config
+and build, `git diff --check`, complete diff/status review, and confidentiality review.
+Inspect built HTML for `/demo` and fragment links, no forms/scripts/external assets, one
+H1 per page, robots metadata, and disclaimer meaning.
 
-For visual work (including Task 001's shell), inspect mobile, tablet, and desktop
-in a browser; record viewport sizes, keyboard and skip-link behavior, focus,
-overflow, browser console, and basic accessibility. Build success alone is insufficient.
-Task 001 additionally requires native and Docker development servers to start and
-serve the page. `docker compose config` or a successful image build alone does not
-prove Docker runtime. Use the README commands and report any exact replacements.
+Verify `/` and `/demo` at 320×568, 390×844, 768×1024, and 1440×900. Check overflow,
+CTA wrapping, direct `/demo` navigation and refresh, skip-link focus, keyboard focus,
+heading order, JavaScript-disabled completeness, reduced motion, automated
+accessibility, console/page/request failures, and external requests. Capture the four
+homepage widths plus closing/footer and demo desktop/mobile views.
 
-## Task 001 completion report
+## Binding real-demo contract
 
-Record foundation summary, files changed, dependencies and reasons, commands and
-results, browser checks and dimensions, unresolved inputs/limitations, no deployment,
-no analytics/collection, and no secrets/private/unrelated commits. Recommend Task 002's
-focus but do not implement it. Keep incomplete acceptance criteria explicit.
+Tasks 007–010 must preserve no-registration access, an isolated preloaded profile,
+seeded simulated cash/positions/orders/transactions/watchlist/history/community data,
+a visible demo state, no production data read/write, no real-money execution, no
+browser secret, reset behavior, no unapproved per-visit market-data request, graceful
+failure, and a landing-page return path. Task 007 audits before architecture selection.
 
-## Inputs before later tasks
-
-TODO: actual logo/wordmark; exact colors/fonts; approved product captures with private
-data checked; founder photos; verified contact channel; approved early-access fields,
-purpose, storage, access, retention/deletion, consent/privacy wording, security, and
-Moroccan data-protection review; production domain; final disclaimer legal review;
-Future `/demo` implementation audit. Missing inputs do not authorize invented substitutes.
-
-## Future public interactive demo — explicit product requirement
-
-Intended journey: **Landing page → Explore TradeHub → `/demo`**.
-Task 002 only links to `#product-preview`; it does not create `/demo` or choose its
-final data architecture. The future demo must:
-
-- Require no registration or login and avoid collecting personal data merely for access.
-- Reuse the real TradeHub frontend and visual identity where technically practical.
-- Start with a preloaded demo profile and simulated balances, positions, transactions,
-  watchlist items, and community content.
-- Let visitors explore the market and simulate selected investing actions.
-- Clearly label all financial activity as virtual and simulated; never execute real-money transactions.
-- Isolate every demo action and dataset from production users and production records.
-- Reset state by session or another approved reset strategy.
-- Offer a route to request early access or create an account later.
-
-Before implementation, audit the existing frontend, authentication, API dependencies,
-WebSockets, market-data dependencies, and state management. Use that audit to decide
-between browser-local mock data, a dedicated isolated demo API, or another controlled
-architecture. No architecture choice, production connection, or frontend copying is
-authorized by Task 002.
-
-## Task 002 verification and handoff
-
-Run `npm ci`, formatting, lint, Astro/TypeScript checks, static build, Docker config
-and build, and full Git/new-file review. Verify in a browser at 320×568, 390×844,
-768×1024, and 1440×900, including both CTAs, header link, skip link, keyboard focus,
-no overflow, console errors, reduced motion, and no-JavaScript rendering. Save mobile
-and desktop screenshots with the completion report. Confirm no collection, deployment,
-new dependencies, later sections, or demo implementation. Task 003 should focus on the
-fragmented experience, integrated solution, and four product pillars after review.
-
-## Task 003 verification and handoff
-
-Run `npm ci`, formatting, lint, Astro/TypeScript checks, static build, Docker config
-and build, and full Git/new-file review. Verify the complete page in a browser at
-320×568, 390×844, 768×1024, and 1440×900. Check the three new sections, balanced
-pillars, headings and landmarks, keyboard skip link and existing anchors, overflow,
-console and request errors, reduced motion, no-JavaScript rendering, and basic
-accessibility. Save mobile and desktop screenshots with the completion report.
-
-Confirm that the approved Task 002 header, hero wording, CTA behavior, and assets are
-preserved; no dependencies, collection, deployment, later homepage sections, or
-`/demo` implementation are introduced. After review, Task 004 may add the authentic
-product showcase using only the supplied and approved captures with clear simulated
-data labeling and useful alternative text.
-
-## Task 004 verification and handoff
-
-Inventory and inspect every supplied product capture before implementation. Require at
-least three distinct, approved views and document source, public-use status, visible
-data, transformations, dimensions, sizes, and market-data-rights limitations. Run the
-standard repository checks plus Docker config/build and inspect responsive image markup,
-lazy loading, dimensions, production image weight, and absence of scripts.
-
-Verify the production preview at 320×568, 390×844, 768×1024, and 1440×900, including
-logical story order, rendered captures, full-size links, keyboard focus and skip link,
-overflow, missing-image resilience, reduced motion, no-JavaScript rendering, console
-and request errors, and basic accessibility. Save all four full-page screenshots.
-
-Confirm that Tasks 002–003 remain intact and that no application embedding, `/demo`,
-later homepage section, deployment, external connection, collection, or new dependency
-is introduced. After review, Task 005 may implement current-stage positioning,
-verified evidence, and the two founder profiles using approved copy and portraits.
+Task 006 is not independently ready for public deployment because `/demo` is only a
+technical handoff page. Final legal review of the provisional disclaimer remains
+required. Deployment is outside this task.

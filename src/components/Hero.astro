@@ -15,17 +15,11 @@ import { hero, site } from '../content/site';
       <a class="button button-primary" href={site.primaryTarget}>
         {site.primaryAction}
       </a>
-      <a
-        class="button button-secondary"
-        href={site.secondaryTarget}
-        aria-describedby="explore-note"
-      >
+      <a class="button button-secondary" href={site.secondaryTarget}>
         {site.secondaryAction}
       </a>
     </div>
-    <p class="action-note" id="explore-note">
-      {hero.temporaryActionNote}
-    </p>
+    <p class="action-note">{hero.helper}</p>
     <p class="clarity-note">{hero.clarity}</p>
   </div>
   <figure
@@ -56,13 +50,4 @@ import { hero, site } from '../content/site';
       {hero.fullSizeLabel}
     </a>
   </figure>
-  <aside
-    class="access-notice"
-    id="early-access"
-    tabindex="-1"
-    aria-labelledby="access-title"
-  >
-    <h2 id="access-title">{hero.accessLabel}</h2>
-    <p>{hero.accessNotice}</p>
-  </aside>
 </section>

@@ -1,74 +1,52 @@
 # Product and scope
 
-Source: the founder-supplied TradeHub Public Website master brief; Task 004 is the current authorized milestone.
-This is a distilled working reference, not a new set of product claims.
+Task 006 establishes a demo-first public website for TradeHub, a Morocco-first
+investing platform bringing market information, virtual investing practice, portfolio
+tools, and investor community into one integrated experience.
 
-TradeHub is a Morocco-first investing platform bringing market information,
-investing practice, portfolio tools, and investor community into one integrated experience.
-A working product exists and is preparing to open to early users. Today it offers
-virtual investing, market information, portfolio functionality, and community.
-It does not execute real-money trades. Virtual investing is the current validation
-and learning stage, not the entire long-term identity. Broader financial integrations
-are only a future possibility; do not promise dates or availability. News is being
-finalized internally and should not be emphasized as unfinished publicly.
+A working TradeHub product exists. The website directs visitors to a no-registration,
+isolated demo using simulated data. TradeHub does not currently execute real-money
+trades. Broader integrations remain long-term direction without promised dates.
 
-## Audiences and goals
+## Conversion and audience
 
-Primary: Moroccan retail investors and young professionals, people interested in
-the Casablanca Stock Exchange, finance clubs, investing communities, and competition
-participants. Secondary: accelerators, investors, potential partners, and financial-sector stakeholders.
-Explain the integrated Morocco-first product quickly, show authentic product proof,
-keep community visible, explain the simulated stage, establish founder credibility,
-and provide a clear early-access route. Be fast and usable on slow mobile connections.
+Primary action: **Try the Demo** → `/demo`.
+Secondary action: **See the Product** → `#showcase`.
 
-Primary action: **Request Early Access**. Secondary: **Explore TradeHub** or
-**Experience TradeHub**. Task 002 uses honest on-page destinations; the future
-secondary destination is the no-registration `/demo` described below.
+The audience includes Moroccan retail investors, young professionals, finance clubs,
+investing communities, competition participants, accelerators, investors, potential
+partners, and financial-sector stakeholders.
+
+## Public-demo boundary
+
+The Task 006 `/demo` route is a truthful development handoff, not the finished demo. It
+contains no fake dashboard, interaction, data, registration, login, iframe, third-party
+service, or collection. It must be replaced before public launch.
+
+The real demo contract for Tasks 007–010 requires:
+
+- no registration or login and no personal information collected merely to enter;
+- a preloaded demo profile and isolated seeded data;
+- simulated cash, positions, orders, transactions, watchlist, portfolio history, and
+  selected community content;
+- a persistent “Demo environment” state and no real-money execution;
+- no production data reads or writes and no browser-shipped production credentials;
+- deterministic reset or another approved session-reset strategy;
+- no unapproved external market-data request on each visit;
+- graceful unavailable-service behavior and a clear landing-page return path.
+
+Task 007 must audit the real application, authentication boundaries, REST APIs,
+WebSockets, market-data dependencies, state management, infrastructure, security, and
+deployment before choosing an architecture. Task 006 does not integrate or modify the
+separate TradeHub application.
 
 ## Guardrails
 
-Every claim must trace to approved brief content or new founder approval. Never imply
-real-money execution, brokerage, licensing, regulatory approval, institutional
-endorsement/affiliation, market-data redistribution authorization, personalized
-investment advice, or guaranteed financial outcomes. Do not invent user counts,
-AUM, volumes, waitlist size, growth, testimonials, partnerships, performance metrics,
-launch dates, or capabilities. Competition recognition is founder evidence, not a
-TradeHub partnership, customer relationship, sponsorship, or endorsement.
+Never imply brokerage, licensing, regulatory approval, official market-data rights,
+institutional endorsement, guaranteed outcomes, real-money execution, or personalized
+investment advice. Do not invent traction, contacts, legal destinations, integrations,
+launch dates, partnerships, testimonials, or performance. No analytics, tracking,
+cookies, forms, authentication, backend coupling, production secrets, or deployment.
 
-Do not use institutional logos without explicit approval. Do not disparage Moroccan
-institutions or claim that no alternatives exist. No private data or secrets in source,
-assets, filenames, or generated output.
-
-No analytics, pixels, session recording, nonessential cookies, form processors, or
-custom collection backend without discussion and approval. Before any collection,
-approve fields and purpose, storage, access, retention/deletion, consent and privacy
-notice, security, and applicable Moroccan data-protection requirements.
-
-## Delivery
-
-Static-first Astro, strict TypeScript, minimal progressive JavaScript, Docker local
-workflow, intended Cloudflare Pages hosting. No backend coupling, interactive demo,
-localization, or deployment in Task 004. Follow the bounded milestones in
-[IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md), with review between tasks.
-
-## Future public interactive demo — explicit product requirement
-
-Intended journey: **Landing page → Explore TradeHub → `/demo`**.
-Task 002 only links to `#product-preview`; it does not create `/demo` or choose its
-final data architecture. The future demo must:
-
-- Require no registration or login and avoid collecting personal data merely for access.
-- Reuse the real TradeHub frontend and visual identity where technically practical.
-- Start with a preloaded demo profile and simulated balances, positions, transactions,
-  watchlist items, and community content.
-- Let visitors explore the market and simulate selected investing actions.
-- Clearly label all financial activity as virtual and simulated; never execute real-money transactions.
-- Isolate every demo action and dataset from production users and production records.
-- Reset state by session or another approved reset strategy.
-- Offer a route to request early access or create an account later.
-
-Before implementation, audit the existing frontend, authentication, API dependencies,
-WebSockets, market-data dependencies, and state management. Use that audit to decide
-between browser-local mock data, a dedicated isolated demo API, or another controlled
-architecture. No architecture choice, production connection, or frontend copying is
-authorized by Task 002.
+The visible disclaimer is provisional and requires final legal review before public
+launch. `noindex, nofollow` remains on both routes during development.

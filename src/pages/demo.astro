@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { demoHandoff, site } from '../content/site';
+---
+
+<BaseLayout title={site.demoTitle} showHeader={false}>
+  <section class="demo-handoff container" aria-labelledby="demo-title">
+    <a
+      class="wordmark demo-wordmark"
+      href="/"
+      aria-label="TradeHub — back to the landing page"
+    >
+      <span class="brand-image">
+        <img
+          src="/brand/tradehub.webp"
+          width="768"
+          height="768"
+          alt={site.name}
+        />
+      </span>
+    </a>
+    <div class="demo-handoff-copy">
+      <p class="section-eyebrow">{demoHandoff.label}</p>
+      <h1 id="demo-title">{demoHandoff.headline}</h1>
+      <p class="section-lead">{demoHandoff.status}</p>
+      <a class="button button-secondary" href={demoHandoff.backTarget}>
+        {demoHandoff.backLabel}
+      </a>
+    </div>
+  </section>
+</BaseLayout>

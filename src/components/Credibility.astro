@@ -1,0 +1,34 @@
+---
+import { credibility } from '../content/site';
+---
+
+<section
+  class="story-section credibility-section"
+  id="experience"
+  aria-labelledby="experience-title"
+>
+  <div class="container">
+    <header class="credibility-introduction">
+      <div class="section-introduction">
+        <p class="section-eyebrow">{credibility.eyebrow}</p>
+        <h2 id="experience-title">{credibility.headline}</h2>
+      </div>
+      <p class="section-lead">{credibility.introduction}</p>
+    </header>
+
+    <ol class="achievement-list">
+      {credibility.achievements.map((achievement) => (
+        <li>
+          <span class="item-number" aria-hidden="true">
+            {achievement.number}
+          </span>
+          <h3>{achievement.title}</h3>
+          <p class="achievement-attribution">{achievement.attribution}</p>
+          <p>{achievement.description}</p>
+        </li>
+      ))}
+    </ol>
+
+    <p class="achievement-clarification">{credibility.clarification}</p>
+  </div>
+</section>

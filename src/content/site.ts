@@ -1,22 +1,25 @@
 export const site = {
   name: 'TradeHub',
   title: 'TradeHub — Investing in Morocco, brought together.',
+  demoTitle: 'TradeHub demo environment',
   skipLink: 'Skip to main content',
   homeLabel: 'TradeHub — back to top',
   navigationLabel: 'Primary navigation',
-  primaryAction: 'Request Early Access',
-  secondaryAction: 'Explore TradeHub',
-  primaryTarget: '#early-access',
-  secondaryTarget: '#product-preview',
+  primaryAction: 'Try the Demo',
+  secondaryAction: 'See the Product',
+  primaryTarget: '/demo',
+  secondaryTarget: '#showcase',
 } as const;
 
 export const hero = {
-  eyebrow: 'Preparing for early users',
+  eyebrow: 'Interactive demo',
   headline: 'Investing in Morocco, brought together.',
   introduction:
     'TradeHub is a Morocco-first investing platform bringing market information, investing practice, portfolio tools, and investor community into one integrated experience.',
   status:
-    "A working TradeHub platform is already built. We're preparing to open it to early users.",
+    'A working TradeHub product already exists. Explore the experience through a controlled virtual demo built with simulated data.',
+  helper:
+    'No registration required. Demo activity is simulated and does not execute real-money trades.',
   clarity:
     'TradeHub currently provides a virtual investing environment. Real-money trade execution is not currently available.',
   visualLabel: 'Product preview',
@@ -25,11 +28,6 @@ export const hero = {
   visualCaption:
     'Actual TradeHub interface. Demo account figures, balances, and portfolio performance are simulated. Market information is shown as captured, not as a live feed.',
   fullSizeLabel: 'Open the full-size product screenshot',
-  accessLabel: 'Early access',
-  accessNotice:
-    'Early-access requests are not open on this page yet. No information is collected here.',
-  temporaryActionNote:
-    'Explore TradeHub currently opens the product preview on this page.',
 } as const;
 
 export const fragmentedExperience = {
@@ -191,10 +189,129 @@ export const productShowcase = {
   ],
 } as const;
 
-// Future product requirement only: no /demo route is implemented in Task 002.
-export const futureDemoPath = '/demo';
-export const pendingInputs = {
-  contact: null,
-  earlyAccessDestination: null,
-  productionUrl: null,
+export const currentStage = {
+  eyebrow: 'Current stage',
+  headline: 'Built for hands-on exploration.',
+  introduction:
+    'A working TradeHub platform already exists. Visitors can explore the product through an isolated virtual demo without creating an account.',
+  supportingCopy:
+    'The demo uses simulated balances, positions, transactions, watchlists, and community content so people can understand the experience without real-money execution.',
+  steps: [
+    {
+      number: '01',
+      title: 'Built',
+      description:
+        'A working product brings the core TradeHub experience together.',
+    },
+    {
+      number: '02',
+      title: 'Explore',
+      description:
+        'The public demo provides a controlled environment for hands-on product exploration.',
+    },
+    {
+      number: '03',
+      title: 'Long-term direction',
+      description:
+        "TradeHub's broader vision is to connect more of the Moroccan retail-investing journey over time.",
+    },
+  ],
+} as const;
+
+export const credibility = {
+  eyebrow: 'Relevant experience',
+  headline: 'Experience shaped by markets and product building.',
+  introduction:
+    'The founders bring complementary experience in software, product building, investing, and market-oriented competitions.',
+  achievements: [
+    {
+      number: '01',
+      title: '2nd Place — Casablanca Stock Exchange Trading Competition, 2025',
+      attribution: 'Nour-Eddine Ait Bouguarri',
+      description:
+        'This achievement belongs to Nour-Eddine and is not presented as a TradeHub award.',
+    },
+    {
+      number: '02',
+      title:
+        '2nd Place — CIH Bank & StartGate UM6P Embedded Finance Hackathon, 2026',
+      attribution: 'Nour-Eddine Ait Bouguarri and Aymane Kajjou',
+      description:
+        'Both TradeHub co-founders were members of the team awarded second place.',
+    },
+  ],
+  clarification:
+    'These achievements describe founder participation and do not represent institutional partnerships or endorsements of TradeHub.',
+} as const;
+
+export const founders = {
+  eyebrow: 'Founders',
+  headline: 'Meet the people building TradeHub.',
+  introduction:
+    'TradeHub is being built by two co-founders shaped by project-based learning at the 1337 / 42 Network and a shared focus on turning ideas into working products.',
+  profiles: [
+    {
+      name: 'Nour-Eddine Ait Bouguarri',
+      role: 'Co-founder',
+      bio: 'Software engineer from the 1337 / 42 Network focused on backend systems, infrastructure, financial technology, and market-oriented products. He combines technical experience with a strong interest in investing and trading and is helping build TradeHub around the needs of Moroccan retail investors.',
+      linkedIn: 'https://www.linkedin.com/in/nour-eddin-ait-bouguarri',
+      linkedInLabel: 'View Nour-Eddine on LinkedIn',
+      portrait: {
+        src: '/founders/nour-eddine-ait-bouguarri.webp',
+        srcset:
+          '/founders/nour-eddine-ait-bouguarri-320.webp 320w, /founders/nour-eddine-ait-bouguarri.webp 600w',
+        width: 600,
+        height: 600,
+        alt: 'Portrait of Nour-Eddine Ait Bouguarri, TradeHub co-founder.',
+      },
+    },
+    {
+      name: 'Aymane Kajjou',
+      role: 'Co-founder',
+      bio: 'Student at 1337 Coding School, UM6P / 42 Network, interested in technology, product building, and entrepreneurship. He focuses on turning ideas into practical products and exploring how technology can solve meaningful real-world problems.',
+      linkedIn: 'https://www.linkedin.com/in/aymane-kajjou',
+      linkedInLabel: 'View Aymane on LinkedIn',
+      portrait: {
+        src: '/founders/aymane-kajjou.webp',
+        srcset:
+          '/founders/aymane-kajjou-320.webp 320w, /founders/aymane-kajjou.webp 400w',
+        width: 400,
+        height: 400,
+        alt: 'Portrait of Aymane Kajjou, TradeHub co-founder.',
+      },
+    },
+  ],
+} as const;
+
+export const closingDemo = {
+  eyebrow: 'Try TradeHub',
+  headline: 'Explore the product for yourself.',
+  supportingCopy:
+    'Open a preloaded demo environment to explore market information, virtual investing, portfolio tools, and community features—without registration.',
+  action: 'Try the Demo',
+  target: '/demo',
+  note: 'All demo balances, positions, transactions, and activity are simulated. No real-money trades are executed.',
+} as const;
+
+export const disclaimer =
+  'TradeHub currently provides a virtual investing environment. Demo balances, transactions, positions, and activity are simulated. TradeHub does not currently execute real-money trades. Financial and market information is provided for informational purposes and does not constitute personalized investment advice.';
+
+export const footer = {
+  descriptor: 'Morocco-first investing platform.',
+  navigationLabel: 'Footer navigation',
+  links: [
+    { label: 'Product', href: '#showcase' },
+    { label: 'Founders', href: '#founders' },
+    { label: 'Try the Demo', href: '/demo' },
+  ],
+  copyright: '© 2026 TradeHub.',
+} as const;
+
+export const demoHandoff = {
+  label: 'Development handoff — not the final public demo',
+  headline: 'TradeHub demo environment',
+  status:
+    'The isolated interactive demo is being connected to the TradeHub product experience. It will use simulated data and will not execute real-money trades.',
+  backLabel: 'Back to the TradeHub website',
+  backTarget: '/',
 } as const;

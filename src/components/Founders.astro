@@ -1,0 +1,51 @@
+---
+import { founders } from '../content/site';
+---
+
+<section
+  class="story-section founders-section"
+  id="founders"
+  aria-labelledby="founders-title"
+>
+  <div class="container">
+    <header class="founders-introduction">
+      <div class="section-introduction">
+        <p class="section-eyebrow">{founders.eyebrow}</p>
+        <h2 id="founders-title">{founders.headline}</h2>
+      </div>
+      <p class="section-lead">{founders.introduction}</p>
+    </header>
+
+    <div class="founder-grid">
+      {founders.profiles.map((founder) => (
+        <article class="founder-profile">
+          <figure class="founder-portrait">
+            <picture>
+              <source
+                type="image/webp"
+                srcset={founder.portrait.srcset}
+                sizes="(min-width: 64rem) 25rem, calc(100vw - 2.5rem)"
+              />
+              <img
+                src={founder.portrait.src}
+                width={founder.portrait.width}
+                height={founder.portrait.height}
+                alt={founder.portrait.alt}
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+          </figure>
+          <div class="founder-copy">
+            <p class="founder-role">{founder.role}</p>
+            <h3>{founder.name}</h3>
+            <p>{founder.bio}</p>
+            <a class="founder-link" href={founder.linkedIn}>
+              {founder.linkedInLabel}
+            </a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

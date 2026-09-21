@@ -1,0 +1,22 @@
+---
+import { closingDemo } from '../content/site';
+---
+
+<section
+  class="story-section closing-demo"
+  aria-labelledby="closing-demo-title"
+>
+  <div class="container closing-demo-inner">
+    <div class="section-introduction closing-demo-copy">
+      <p class="section-eyebrow">{closingDemo.eyebrow}</p>
+      <h2 id="closing-demo-title">{closingDemo.headline}</h2>
+      <p class="section-lead">{closingDemo.supportingCopy}</p>
+    </div>
+    <div class="closing-demo-action">
+      <a class="button button-primary" href={closingDemo.target}>
+        {closingDemo.action}
+      </a>
+      <p>{closingDemo.note}</p>
+    </div>
+  </div>
+</section>

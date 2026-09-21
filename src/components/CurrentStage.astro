@@ -1,0 +1,30 @@
+---
+import { currentStage } from '../content/site';
+---
+
+<section
+  class="story-section current-stage"
+  id="current-stage"
+  aria-labelledby="current-stage-title"
+>
+  <div class="container stage-layout">
+    <header class="section-introduction stage-introduction">
+      <p class="section-eyebrow">{currentStage.eyebrow}</p>
+      <h2 id="current-stage-title">{currentStage.headline}</h2>
+      <p class="section-lead">{currentStage.introduction}</p>
+      <p class="stage-supporting-copy">{currentStage.supportingCopy}</p>
+    </header>
+
+    <ol class="stage-sequence">
+      {currentStage.steps.map((step) => (
+        <li>
+          <span class="item-number" aria-hidden="true">
+            {step.number}
+          </span>
+          <h3>{step.title}</h3>
+          <p>{step.description}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

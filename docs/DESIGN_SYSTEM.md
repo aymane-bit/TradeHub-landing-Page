@@ -80,7 +80,7 @@ All new presentation values are **provisional**, not extracted brand values:
 Desktop uses a two-column editorial hero; below 1024px content stacks naturally.
 At narrow mobile sizes CTA buttons stack. The product placeholder reserves a 6:5
 box with a minimum 18rem height; it contains only development labels, never fake UI.
-All destinations exist and can receive native anchor focus. The minimal early-access
+All destinations exist and can receive native anchor focus. The former temporary conversion
 notice is inside the hero; no later closing CTA section is implemented. The original
 development footer text is removed; the full footer remains deferred to Task 006.
 
@@ -157,3 +157,43 @@ captions continue to communicate the product if images are blocked.
 Asset source, public approval, privacy review, transformations, dimensions, sizes, and
 hashes are recorded in [PRODUCT_ASSET_PROVENANCE.md](PRODUCT_ASSET_PROVENANCE.md).
 No new visual token, dependency, icon, script, or interactive state was introduced.
+
+## Task 005 stage, evidence, and founders
+
+The current-stage section uses the existing neutral surface and a three-part editorial
+sequence. Language and hierarchy distinguish the working product, launch preparation,
+and long-term direction without progress graphics, dates, countdowns, or promises.
+
+Achievements use two equally weighted ruled entries with direct person attribution and
+a persistent clarification. No trophy treatment, badges, logos, gradients, or
+institutional branding appear. Founder profiles use equal square portrait frames,
+heading hierarchy, role styling, bio width, spacing, and text-link treatment. The
+desktop layout is two equal columns; mobile keeps Nour-Eddine followed by Aymane in one
+logical column.
+
+Portrait `<picture>` elements provide 320px and larger WebP candidates. Intrinsic
+dimensions reserve a square ratio; `loading="lazy"` and `decoding="async"` apply below
+the fold. Text remains complete if portraits are unavailable. The current compact
+header remains unchanged because another link would crowd 320px and 390px layouts.
+
+Portrait and achievement sources, approval, attribution, transforms, metadata review,
+dimensions, sizes, and hashes are recorded in
+[FOUNDER_AND_ACHIEVEMENT_PROVENANCE.md](FOUNDER_AND_ACHIEVEMENT_PROVENANCE.md).
+
+## Task 006 closing surfaces and demo handoff
+
+The header retains its compact height and replaces its action label and destination
+without adding navigation. The hero keeps its approved two-column architecture and
+separates the concise demo helper from the bordered product boundary note.
+
+The closing CTA uses the existing black/white system as the page's strongest closing
+moment, without imagery or effects. The disclaimer uses a readable neutral surface and
+the footer uses the existing wordmark, typography, rules, spacing, focus system, and
+wrapping links. At small widths, actions and footer links wrap without horizontal
+overflow.
+
+The temporary demo page uses the wordmark, existing tokens, one restrained content
+block, and an explicit development-handoff label. It contains no dashboard styling or
+product controls that could be mistaken for the completed demo. Both routes retain the
+clipped-until-focused skip link, strong focus outline, reduced-motion behavior, and
+zero-client-JavaScript presentation.
