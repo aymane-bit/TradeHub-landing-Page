@@ -1,0 +1,12 @@
+name: tradehub-public-website
+services:
+  web:
+    build: .
+    ports:
+      - '127.0.0.1:4321:4321'
+    volumes:
+      - ./src:/app/src:ro
+      - ./public:/app/public:ro
+      - ./astro.config.mjs:/app/astro.config.mjs:ro
+      - ./tsconfig.json:/app/tsconfig.json:ro
+    init: true

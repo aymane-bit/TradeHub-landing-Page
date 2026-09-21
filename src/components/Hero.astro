@@ -1,0 +1,68 @@
+---
+import { hero, site } from '../content/site';
+---
+
+<section class="hero container" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow">
+      <span class="status-dot" aria-hidden="true"></span>
+      {hero.eyebrow}
+    </p>
+    <h1 id="hero-title">{hero.headline}</h1>
+    <p class="hero-introduction">{hero.introduction}</p>
+    <p class="product-status">{hero.status}</p>
+    <div class="hero-actions">
+      <a class="button button-primary" href={site.primaryTarget}>
+        {site.primaryAction}
+      </a>
+      <a
+        class="button button-secondary"
+        href={site.secondaryTarget}
+        aria-describedby="explore-note"
+      >
+        {site.secondaryAction}
+      </a>
+    </div>
+    <p class="action-note" id="explore-note">
+      {hero.temporaryActionNote}
+    </p>
+    <p class="clarity-note">{hero.clarity}</p>
+  </div>
+  <figure
+    class="product-preview"
+    id="product-preview"
+    tabindex="-1"
+    aria-labelledby="preview-label"
+  >
+    <figcaption id="preview-label" class="visual-heading">
+      {hero.visualLabel}
+    </figcaption>
+    <a
+      class="product-image-link"
+      href="/product/market-overview.webp"
+      aria-label={hero.fullSizeLabel}
+    >
+      <img
+        class="product-image"
+        src="/product/market-overview.webp"
+        width="1024"
+        height="987"
+        alt={hero.visualAlt}
+        decoding="async"
+      />
+    </a>
+    <p class="visual-caption">{hero.visualCaption}</p>
+    <a class="image-hint" href="/product/market-overview.webp">
+      {hero.fullSizeLabel}
+    </a>
+  </figure>
+  <aside
+    class="access-notice"
+    id="early-access"
+    tabindex="-1"
+    aria-labelledby="access-title"
+  >
+    <h2 id="access-title">{hero.accessLabel}</h2>
+    <p>{hero.accessNotice}</p>
+  </aside>
+</section>

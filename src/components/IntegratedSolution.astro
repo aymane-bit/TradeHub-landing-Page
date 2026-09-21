@@ -1,0 +1,29 @@
+---
+import { integratedSolution } from '../content/site';
+---
+
+<section
+  class="story-section solution-section"
+  id="approach"
+  aria-labelledby="approach-title"
+>
+  <div class="container solution-inner">
+    <header class="section-introduction solution-copy">
+      <p class="section-eyebrow">{integratedSolution.eyebrow}</p>
+      <h2 id="approach-title">{integratedSolution.headline}</h2>
+      <p class="section-lead">{integratedSolution.introduction}</p>
+      <p class="solution-clarification">{integratedSolution.clarification}</p>
+    </header>
+
+    <ol class="journey" aria-label="The TradeHub experience">
+      {integratedSolution.journey.map((step, index) => (
+        <li>
+          <span class="journey-number" aria-hidden="true">
+            {String(index + 1).padStart(2, '0')}
+          </span>
+          <span>{step}</span>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

@@ -1,0 +1,32 @@
+{
+  "name": "tradehub-public-website",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.21.0 <25",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --max-warnings 0",
+    "check": "astro check && tsc --noEmit"
+  },
+  "dependencies": {
+    "astro": "7.3.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "@eslint/js": "10.0.1",
+    "eslint": "10.11.0",
+    "eslint-plugin-astro": "3.2.1",
+    "prettier": "3.9.8",
+    "prettier-plugin-astro": "1.0.1",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.70.0"
+  }
+}

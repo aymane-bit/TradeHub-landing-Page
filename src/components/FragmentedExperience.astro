@@ -1,0 +1,31 @@
+---
+import { fragmentedExperience } from '../content/site';
+---
+
+<section
+  class="story-section challenge-section"
+  id="challenge"
+  aria-labelledby="challenge-title"
+>
+  <div class="container story-grid">
+    <header class="section-introduction">
+      <p class="section-eyebrow">{fragmentedExperience.eyebrow}</p>
+      <h2 id="challenge-title">{fragmentedExperience.headline}</h2>
+      <p class="section-lead">{fragmentedExperience.introduction}</p>
+    </header>
+
+    <ol class="editorial-list">
+      {fragmentedExperience.points.map((point) => (
+        <li>
+          <span class="item-number" aria-hidden="true">
+            {point.number}
+          </span>
+          <div>
+            <h3>{point.title}</h3>
+            <p>{point.description}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

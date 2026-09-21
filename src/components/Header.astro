@@ -1,0 +1,23 @@
+---
+import { site } from '../content/site';
+---
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="wordmark" href="#top" aria-label={site.homeLabel}>
+      <span class="brand-image">
+        <img
+          src="/brand/tradehub.webp"
+          width="768"
+          height="768"
+          alt={site.name}
+        />
+      </span>
+    </a>
+    <nav aria-label={site.navigationLabel}>
+      <a class="button button-primary header-action" href={site.primaryTarget}>
+        {site.primaryAction}
+      </a>
+    </nav>
+  </div>
+</header>
