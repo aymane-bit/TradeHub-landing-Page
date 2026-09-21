@@ -108,6 +108,89 @@ export const productPillars = {
   ],
 } as const;
 
+export const productShowcase = {
+  eyebrow: 'Inside TradeHub',
+  headline: 'A working product, not just an idea.',
+  introduction:
+    'Explore real views from the TradeHub platform—from market discovery and virtual investing practice to portfolio understanding and investor community.',
+  qualification:
+    'Product views use simulated demo data. TradeHub does not currently execute real-money trades.',
+  stories: [
+    {
+      number: '01',
+      label: 'Market exploration',
+      title: 'Explore the Moroccan market in context.',
+      description:
+        'Move from a broad market view toward the companies and information you want to understand, within the wider TradeHub experience.',
+      image: {
+        src: '/product/showcase/market-board.webp',
+        srcset:
+          '/product/showcase/market-board-640.webp 640w, /product/showcase/market-board.webp 1024w',
+        width: 1024,
+        height: 987,
+        alt: 'TradeHub market board listing Moroccan market symbols with prices, changes, sectors, and captured update times.',
+        caption:
+          'Captured TradeHub market board. Market information is shown for illustration and is not a live, official, or exchange-provided feed.',
+        fullSizeLabel: 'Open the full market-board screenshot',
+      },
+    },
+    {
+      number: '02',
+      label: 'Virtual investing practice',
+      title: 'Practice decisions in a virtual environment.',
+      description:
+        'Explore simulated buying and selling decisions without real-money trade execution, then see how those decisions affect the demo experience.',
+      image: {
+        src: '/product/showcase/virtual-investing.webp',
+        srcset:
+          '/product/showcase/virtual-investing-640.webp 640w, /product/showcase/virtual-investing.webp 1024w',
+        width: 1024,
+        height: 940,
+        alt: 'TradeHub company view with a price chart, virtual trade panel, and simulated pending order.',
+        caption:
+          'TradeHub company view with a simulated order panel and pending-order example. All prices, orders, holdings, and results shown are demo data; no real-money trade is executed.',
+        fullSizeLabel: 'Open the full virtual-investing screenshot',
+      },
+    },
+    {
+      number: '03',
+      label: 'Portfolio understanding',
+      title: 'See the portfolio as a connected picture.',
+      description:
+        'Review positions, allocation, performance, and investing activity together within the simulated TradeHub portfolio experience.',
+      image: {
+        src: '/product/showcase/portfolio.webp',
+        srcset:
+          '/product/showcase/portfolio-640.webp 640w, /product/showcase/portfolio.webp 1024w',
+        width: 1024,
+        height: 867,
+        alt: 'TradeHub simulated portfolio with summary values, a performance chart, asset allocation, and holdings.',
+        caption:
+          'Simulated TradeHub portfolio view with positions, allocation, and performance. All balances, positions, and results shown are demo data.',
+        fullSizeLabel: 'Open the full portfolio screenshot',
+      },
+    },
+    {
+      number: '04',
+      label: 'Investor community',
+      title: 'Connect tools with investor conversation.',
+      description:
+        "Discuss companies, markets, investment ideas, and investing experiences through TradeHub's social and community functionality.",
+      image: {
+        src: '/product/showcase/community.webp',
+        srcset:
+          '/product/showcase/community-480.webp 480w, /product/showcase/community.webp 701w',
+        width: 701,
+        height: 768,
+        alt: 'TradeHub community feed with a post composer, demo posts, and suggested demo profiles.',
+        caption:
+          'TradeHub community view using approved demo profiles and demo posts. Community content is shown for product illustration, not as investment advice or endorsement.',
+        fullSizeLabel: 'Open the full community screenshot',
+      },
+    },
+  ],
+} as const;
+
 // Future product requirement only: no /demo route is implemented in Task 002.
 export const futureDemoPath = '/demo';
 export const pendingInputs = {

@@ -1,8 +1,8 @@
 # Controlled implementation plan
 
-Tasks 001 and 002 are verified. Task 003 is authorized: the fragmentation problem,
-integrated solution, and four product pillars. Stop after its completion report and
-review. Later rows describe the sequence, not permission to execute.
+Tasks 001–003 are verified. Task 004 is authorized: the authentic real-product
+showcase using approved captures. Stop after its completion report and review. Later
+rows describe the sequence, not permission to execute.
 
 | Task          | Bounded scope                                                                                                                        | Additional verification                                                                                                             |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
@@ -92,3 +92,21 @@ preserved; no dependencies, collection, deployment, later homepage sections, or
 `/demo` implementation are introduced. After review, Task 004 may add the authentic
 product showcase using only the supplied and approved captures with clear simulated
 data labeling and useful alternative text.
+
+## Task 004 verification and handoff
+
+Inventory and inspect every supplied product capture before implementation. Require at
+least three distinct, approved views and document source, public-use status, visible
+data, transformations, dimensions, sizes, and market-data-rights limitations. Run the
+standard repository checks plus Docker config/build and inspect responsive image markup,
+lazy loading, dimensions, production image weight, and absence of scripts.
+
+Verify the production preview at 320×568, 390×844, 768×1024, and 1440×900, including
+logical story order, rendered captures, full-size links, keyboard focus and skip link,
+overflow, missing-image resilience, reduced motion, no-JavaScript rendering, console
+and request errors, and basic accessibility. Save all four full-page screenshots.
+
+Confirm that Tasks 002–003 remain intact and that no application embedding, `/demo`,
+later homepage section, deployment, external connection, collection, or new dependency
+is introduced. After review, Task 005 may implement current-stage positioning,
+verified evidence, and the two founder profiles using approved copy and portraits.

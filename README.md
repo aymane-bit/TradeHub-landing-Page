@@ -1,7 +1,8 @@
 # TradeHub public website
 
-Task 002 builds on the English-only static Astro/strict TypeScript foundation.
-The homepage implements the header and hero with approved logo/product imagery and provisional styling.
+Tasks 001–004 build on the English-only static Astro/strict TypeScript foundation.
+The homepage implements the header, hero, narrative sections, product pillars, and an
+authentic product showcase with approved imagery and provisional styling.
 The main TradeHub application, backend, and future interactive demo are separate projects.
 
 ## Native development
@@ -58,15 +59,15 @@ and desktop sizes, keyboard navigation, overflow, console, and accessibility che
 
 ## Structure
 
-- `src/pages/index.astro`: header/hero homepage route.
+- `src/pages/index.astro`: composed single-page homepage route through the product showcase.
 - `src/layouts/BaseLayout.astro`: language, metadata, landmarks, visible skip link.
 - `src/content/site.ts`: centralized hero text, temporary CTA targets, and future demo path.
 - `src/styles/`: global foundations and explicitly provisional tokens.
 - `public/{brand,founders,product,social}/`: approved assets; founder/social destinations reserved for later tasks.
 - `docs/`: product, copy, visual rules, and bounded implementation plan.
 
-`src/components/Header.astro` and `Hero.astro` hold the focused visual components. Asset guidance
-lives in `docs/DESIGN_SYSTEM.md`, outside the publicly served asset directories.
+Focused components live in `src/components/`. Product asset guidance and provenance
+live in `docs/DESIGN_SYSTEM.md` and `docs/PRODUCT_ASSET_PROVENANCE.md`.
 
 ## Tooling dependencies
 
@@ -97,8 +98,9 @@ Read [AGENTS.md](AGENTS.md), [project brief](docs/PROJECT_BRIEF.md),
 [approved content](docs/CONTENT.md), [design system](docs/DESIGN_SYSTEM.md), and
 [implementation plan](docs/IMPLEMENTATION_PLAN.md).
 No backend connection, forms, analytics, cookies, or trackers are included.
-Approved logo, brand values, photos, product captures, contact, CTA destinations,
-privacy method, legal wording, and production domain remain explicit TODOs.
-Task 002 uses `#early-access` and `#product-preview` as honest temporary targets.
+Final brand values, founder-photo integration, contact, CTA destinations, privacy
+method, legal wording, and production domain remain explicit TODOs. Approved logo and
+product captures are implemented through Task 004. The page uses `#early-access` and
+`#product-preview` as honest temporary targets.
 The future no-registration `/demo` is specified in `docs/PROJECT_BRIEF.md`; no demo
 route exists yet.

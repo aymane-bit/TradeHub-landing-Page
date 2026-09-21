@@ -1,6 +1,6 @@
 # Product and scope
 
-Source: the founder-supplied TradeHub Public Website master brief; Task 002 is the current authorized milestone.
+Source: the founder-supplied TradeHub Public Website master brief; Task 004 is the current authorized milestone.
 This is a distilled working reference, not a new set of product claims.
 
 TradeHub is a Morocco-first investing platform bringing market information,
@@ -48,7 +48,7 @@ notice, security, and applicable Moroccan data-protection requirements.
 
 Static-first Astro, strict TypeScript, minimal progressive JavaScript, Docker local
 workflow, intended Cloudflare Pages hosting. No backend coupling, interactive demo,
-localization, or deployment in Task 002. Follow the bounded milestones in
+localization, or deployment in Task 004. Follow the bounded milestones in
 [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md), with review between tasks.
 
 ## Future public interactive demo — explicit product requirement

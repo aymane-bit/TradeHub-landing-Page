@@ -446,3 +446,35 @@ The section anchors are `#challenge`, `#approach`, and `#platform`. They are ava
 for direct links, but the compact Task 002 header remains unchanged because adding
 three navigation links would crowd the approved 320px layout. No later section or
 `/demo` route is rendered.
+
+## Task 004 implemented content
+
+Task 004 adds `#showcase` directly after the product pillars. Visible text is
+centralized in `src/content/site.ts`.
+
+- Eyebrow: **Inside TradeHub**
+- Heading: **A working product, not just an idea.**
+- Introduction: **Explore real views from the TradeHub platform—from market discovery
+  and virtual investing practice to portfolio understanding and investor community.**
+- Qualification: **Product views use simulated demo data. TradeHub does not currently
+  execute real-money trades.**
+
+The four stories are:
+
+1. **Explore the Moroccan market in context.** Move from a broad market view toward
+   the companies and information you want to understand, within the wider TradeHub
+   experience.
+2. **Practice decisions in a virtual environment.** Explore simulated buying and
+   selling decisions without real-money trade execution, then see how those decisions
+   affect the demo experience.
+3. **See the portfolio as a connected picture.** Review positions, allocation,
+   performance, and investing activity together within the simulated TradeHub
+   portfolio experience.
+4. **Connect tools with investor conversation.** Discuss companies, markets,
+   investment ideas, and investing experiences through TradeHub's social and community
+   functionality.
+
+Persistent figure captions identify financial data as simulated and the market view
+as captured rather than live, official, or exchange-provided. The community caption
+states that its approved demo content is product illustration, not investment advice
+or endorsement. Each story includes descriptive full-size screenshot link text.

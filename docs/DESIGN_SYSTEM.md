@@ -137,3 +137,23 @@ The existing header and hero layout, wording, CTA destinations, skip-link behavi
 and approved product assets are preserved. The approved TradeHub WebP also serves as
 the document icon, preventing the browser's implicit missing-favicon request without
 introducing another asset.
+
+## Task 004 product showcase
+
+The showcase continues the existing editorial system with a strong introduction and
+four numbered stories. On desktop, each story pairs large authentic product media with
+concise copy and alternates its visual alignment. On smaller screens, every story keeps
+the same logical copy-then-media document order in a single column. Ruled separators,
+the existing neutral border, the established radius, and generous spacing provide
+structure without browser chrome, device frames, shadows, overlaps, or animation.
+
+Responsive `<picture>` markup lets browsers choose a smaller WebP for mobile or the
+unchanged full-size WebP where additional detail is useful. Width and height attributes
+reserve each image's aspect ratio. Showcase images use `loading="lazy"` and
+`decoding="async"`; the above-the-fold hero behavior is unchanged. Captions remain
+visible, and full-size links are available to keyboard and mobile users. Story text and
+captions continue to communicate the product if images are blocked.
+
+Asset source, public approval, privacy review, transformations, dimensions, sizes, and
+hashes are recorded in [PRODUCT_ASSET_PROVENANCE.md](PRODUCT_ASSET_PROVENANCE.md).
+No new visual token, dependency, icon, script, or interactive state was introduced.
