@@ -8,7 +8,7 @@ import ProductExperience from '../components/ProductExperience.astro';
 import ProductProof from '../components/ProductProof.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import WhyTradeHub from '../components/WhyTradeHub.astro';
-import { site } from '../content/site';
+import { contact, site } from '../content/site';
 ---
 
 <BaseLayout title={site.title} pageClass="landing-page">
@@ -19,6 +19,61 @@ import { site } from '../content/site';
   <WhyTradeHub />
   <Credibility />
   <Founders />
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <div class="container contact-inner">
+      <div class="contact-copy">
+        <p class="section-label">{contact.label}</p>
+        <h2 id="contact-title">{contact.heading}</h2>
+        <p class="contact-introduction">{contact.introduction}</p>
+        <a class="contact-email" href={`mailto:${site.contactEmail}`}>
+          {site.contactEmail}
+        </a>
+      </div>
+      <form
+        class="contact-form"
+        action={`mailto:${site.contactEmail}`}
+        method="post"
+        enctype="text/plain"
+        data-contact-form
+      >
+        <div class="contact-fields">
+          <label>
+            {contact.nameLabel}
+            <input name="name" autocomplete="name" required maxlength="100" />
+          </label>
+          <label>
+            {contact.emailLabel}
+            <input
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+              maxlength="254"
+            />
+          </label>
+        </div>
+        <label>
+          {contact.messageLabel}
+          <textarea
+            name="message"
+            rows="4"
+            required
+            maxlength="3000"
+          ></textarea>
+        </label>
+        <div class="contact-actions">
+          <button
+            type="submit"
+            class="button button-signal"
+            aria-describedby="contact-note"
+          >
+            {contact.action}
+          </button>
+          <p id="contact-note">{contact.note}</p>
+        </div>
+      </form>
+    </div>
+  </section>
   <SiteFooter />
   <script>
     import '../scripts/landing';

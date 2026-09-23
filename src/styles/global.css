@@ -1106,9 +1106,6 @@ h1 {
 }
 
 .contact {
-  min-height: min(44rem, 76svh);
-  display: grid;
-  align-items: center;
   color: white;
   background:
     radial-gradient(
@@ -1119,15 +1116,17 @@ h1 {
     var(--color-ink-soft);
 }
 .contact-inner {
-  padding-block: clamp(6rem, 14vw, 11rem);
+  padding-block: clamp(3rem, 6vw, 5rem);
+  display: grid;
+  gap: 2rem;
 }
-.contact h1 {
-  max-width: 8ch;
-  margin-block: var(--space-4);
+.contact h2 {
+  margin-block: 1rem;
+  font-size: clamp(2.5rem, 5vw, 4rem);
 }
 .contact-introduction {
-  max-width: 48ch;
-  margin-bottom: var(--space-5);
+  max-width: 32ch;
+  margin-bottom: 1rem;
   color: var(--color-muted-light);
   font-size: var(--font-lead);
 }
@@ -1136,9 +1135,6 @@ h1 {
   min-height: 3.25rem;
   display: inline-flex;
   align-items: center;
-  padding: 0.8rem 1.1rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: var(--radius-control);
   color: white;
   font-weight: 760;
   text-decoration-color: var(--color-sand);
@@ -1150,6 +1146,61 @@ h1 {
 .contact-email:hover {
   border-color: var(--color-sand);
   background: rgba(255, 255, 255, 0.06);
+}
+.contact-form,
+.contact-form label {
+  display: grid;
+  gap: 0.6rem;
+}
+.contact-form {
+  gap: 1.1rem;
+}
+.contact-form label {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.contact-fields {
+  display: grid;
+  gap: 1rem;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 0.85rem 1rem;
+  border: 1px solid #686b65;
+  border-radius: var(--radius-control);
+  background: rgba(255, 255, 255, 0.04);
+  color: white;
+  font: inherit;
+  font-weight: 400;
+}
+.contact-form textarea {
+  resize: vertical;
+}
+.contact-form input:focus-visible,
+.contact-form textarea:focus-visible {
+  outline: 2px solid var(--color-sand);
+  outline-offset: 3px;
+}
+.contact-actions {
+  display: grid;
+  gap: 0.75rem;
+  justify-items: start;
+}
+.contact-actions p {
+  color: var(--color-muted-light);
+  font-size: 0.8rem;
+}
+@media (min-width: 48rem) {
+  .contact-inner {
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+  }
+  .contact-fields {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .site-footer {

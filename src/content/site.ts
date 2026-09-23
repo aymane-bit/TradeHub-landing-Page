@@ -14,8 +14,19 @@ export const site = {
     { label: 'How it works', href: '/#how-it-works' },
     { label: 'About', href: '/#about' },
     { label: 'Founders', href: '/#founders' },
-    { label: 'Contact', href: '/contact' },
+    { label: 'Contact', href: '/#contact' },
   ],
+} as const;
+
+export const contact = {
+  label: 'Contact us',
+  heading: 'Let’s talk.',
+  introduction: 'A question, an idea, or feedback? We’d love to hear from you.',
+  nameLabel: 'Your name',
+  emailLabel: 'Email address',
+  messageLabel: 'Your message',
+  action: 'Open email draft',
+  note: 'Opens your email app. Send the message there to reach us.',
 } as const;
 
 export const hero = {
@@ -241,7 +252,7 @@ export const footer = {
     { label: 'How it works', href: '/#how-it-works' },
     { label: 'About', href: '/#about' },
     { label: 'Founders', href: '/#founders' },
-    { label: 'Contact', href: '/contact' },
+    { label: 'Contact', href: '/#contact' },
   ],
   copyright: '© 2026 TradeHub',
 } as const;

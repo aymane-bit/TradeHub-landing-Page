@@ -1,5 +1,21 @@
 document.documentElement.classList.add('js');
 
+const contactForm = document.querySelector<HTMLFormElement>(
+  '[data-contact-form]',
+);
+contactForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const fields = new FormData(contactForm);
+  const name = String(fields.get('name') ?? '').trim();
+  const email = String(fields.get('email') ?? '').trim();
+  const message = String(fields.get('message') ?? '').trim();
+  const subject = encodeURIComponent(`TradeHub enquiry from ${name}`);
+  const body = encodeURIComponent(
+    `Name: ${name}\nEmail: ${email}\n\n${message}`,
+  );
+  window.location.href = `${contactForm.action}?subject=${subject}&body=${body}`;
+});
+
 const header = document.querySelector<HTMLElement>('[data-site-header]');
 const menuToggle =
   document.querySelector<HTMLButtonElement>('[data-menu-toggle]');
