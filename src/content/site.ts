@@ -8,7 +8,7 @@ export const site = {
   navigationLabel: 'Primary navigation',
   menuLabel: 'Menu',
   closeMenuLabel: 'Close menu',
-  contactEmail: 'tradehub@tradehub.ma',
+  contactEmail: 'contactus@tradehub.ma',
   navigation: [
     { label: 'Product', href: '/#product' },
     { label: 'How it works', href: '/#how-it-works' },
@@ -36,8 +36,8 @@ export const hero = {
     'TradeHub connects Moroccan market information, virtual investing, portfolio tracking, and investor community in one product.',
   primaryAction: 'Explore the product',
   primaryTarget: '#product',
-  secondaryAction: 'See how it works',
-  secondaryTarget: '#how-it-works',
+  secondaryAction: 'Contact us',
+  secondaryTarget: '#contact',
   trustItems: ['Morocco-first', 'Virtual investing', 'Connected experience'],
   visualLabel: 'TradeHub product',
   visualAlt:

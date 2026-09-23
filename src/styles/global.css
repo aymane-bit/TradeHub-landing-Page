@@ -529,6 +529,8 @@ h1 {
   border-bottom: 0;
 }
 .proof-list span {
+  flex-shrink: 0;
+  white-space: nowrap;
   color: rgba(12, 15, 13, 0.48);
   font-size: 0.68rem;
   font-variant-numeric: tabular-nums;
