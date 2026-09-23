@@ -1,6 +1,8 @@
 export const site = {
   name: 'TradeHub',
   title: 'TradeHub — Explore the market. Practice investing.',
+  description:
+    'Explore Moroccan market information, practice virtual investing, track a simulated portfolio, and join investor conversations with TradeHub.',
   skipLink: 'Skip to main content',
   homeLabel: 'TradeHub — back to top',
   navigationLabel: 'Primary navigation',

@@ -4,10 +4,20 @@ import Header from '../components/Header.astro';
 import { site } from '../content/site';
 interface Props {
   title: string;
+  description?: string;
+  robots?: string;
   showHeader?: boolean;
   pageClass?: string;
 }
-const { title, showHeader = true, pageClass = '' } = Astro.props;
+const {
+  title,
+  description = site.description,
+  robots = 'index, follow',
+  showHeader = true,
+  pageClass = '',
+} = Astro.props;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const socialImageUrl = new URL('/brand/tradehub.webp', Astro.site);
 ---
 
 <!doctype html>
@@ -15,8 +25,22 @@ const { title, showHeader = true, pageClass = '' } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
+    <link rel="canonical" href={canonicalUrl} />
     <link rel="icon" type="image/webp" href="/brand/tradehub.webp" />
+    <meta name="theme-color" content="#0c0f0d" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={socialImageUrl} />
+    <meta property="og:image:alt" content="TradeHub" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImageUrl} />
     <title>{title}</title>
   </head>
   <body id="top" class={pageClass} tabindex="-1">

@@ -1084,6 +1084,27 @@ h1 {
   transform: translate(2px, -2px);
 }
 
+.not-found {
+  min-height: 100svh;
+  display: grid;
+  align-items: center;
+  color: white;
+  background: var(--color-ink-soft);
+}
+.not-found-inner {
+  padding-block: clamp(5rem, 14vw, 10rem);
+}
+.not-found h1 {
+  max-width: 10ch;
+  margin-block: var(--space-4);
+}
+.not-found-inner > p:not(.section-label) {
+  max-width: 44ch;
+  margin-bottom: var(--space-5);
+  color: var(--color-muted-light);
+  font-size: var(--font-lead);
+}
+
 .site-footer {
   color: white;
   background: var(--color-ink-soft);

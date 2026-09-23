@@ -38,4 +38,4 @@ The homepage progressively enhances its mobile menu and Product carousel with lo
 - `public/` — approved local brand, product, and founder assets.
 - `docs/` — product, design, provenance, verification, and completion records.
 
-The route remains `noindex, nofollow` during development. Legal review, final domain configuration, deployment, and public indexing remain later work.
+The production site URL is `https://tradehub.ma`. Final legal review and deployment-specific verification remain required before launch.

@@ -14,11 +14,11 @@
 - `/` is static and uses one small local progressive-enhancement script.
 - The Product carousel uses the four existing approved captures and requires no third-party carousel dependency.
 - The built `dist/` artifact requires no backend or runtime environment variable.
+- Production canonical URLs, indexing metadata, robots policy, sitemap, and the 404 route target `https://tradehub.ma`.
 
 ## Before public launch
 
 - Complete final legal review of the disclaimer and market-information wording.
-- Confirm final brand-token approval and production SEO/indexing metadata.
 - Choose the production host and domain, then run deployment-specific caching, security-header, and route-fallback checks.
 - Re-run the documented production and browser matrix against the deployed origin.
 
