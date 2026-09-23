@@ -1105,6 +1105,53 @@ h1 {
   font-size: var(--font-lead);
 }
 
+.contact {
+  min-height: min(44rem, 76svh);
+  display: grid;
+  align-items: center;
+  color: white;
+  background:
+    radial-gradient(
+      circle at 84% 18%,
+      rgba(189, 57, 51, 0.18),
+      transparent 34%
+    ),
+    var(--color-ink-soft);
+}
+.contact-inner {
+  padding-block: clamp(6rem, 14vw, 11rem);
+}
+.contact h1 {
+  max-width: 8ch;
+  margin-block: var(--space-4);
+}
+.contact-introduction {
+  max-width: 48ch;
+  margin-bottom: var(--space-5);
+  color: var(--color-muted-light);
+  font-size: var(--font-lead);
+}
+.contact-email {
+  width: fit-content;
+  min-height: 3.25rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-control);
+  color: white;
+  font-weight: 760;
+  text-decoration-color: var(--color-sand);
+  text-decoration-thickness: 2px;
+  transition:
+    border-color var(--motion-fast) ease,
+    background-color var(--motion-fast) ease;
+}
+.contact-email:hover {
+  border-color: var(--color-sand);
+  background: rgba(255, 255, 255, 0.06);
+}
+
 .site-footer {
   color: white;
   background: var(--color-ink-soft);

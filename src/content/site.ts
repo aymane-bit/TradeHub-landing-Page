@@ -8,11 +8,13 @@ export const site = {
   navigationLabel: 'Primary navigation',
   menuLabel: 'Menu',
   closeMenuLabel: 'Close menu',
+  contactEmail: 'tradehub@tradehub.ma',
   navigation: [
-    { label: 'Product', href: '#product' },
-    { label: 'How it works', href: '#how-it-works' },
-    { label: 'About', href: '#about' },
-    { label: 'Founders', href: '#founders' },
+    { label: 'Product', href: '/#product' },
+    { label: 'How it works', href: '/#how-it-works' },
+    { label: 'About', href: '/#about' },
+    { label: 'Founders', href: '/#founders' },
+    { label: 'Contact', href: '/contact' },
   ],
 } as const;
 
@@ -235,10 +237,11 @@ export const footer = {
   descriptor: 'Morocco-first investing platform',
   navigationLabel: 'Footer navigation',
   links: [
-    { label: 'Product', href: '#product' },
-    { label: 'How it works', href: '#how-it-works' },
-    { label: 'About', href: '#about' },
-    { label: 'Founders', href: '#founders' },
+    { label: 'Product', href: '/#product' },
+    { label: 'How it works', href: '/#how-it-works' },
+    { label: 'About', href: '/#about' },
+    { label: 'Founders', href: '/#founders' },
+    { label: 'Contact', href: '/contact' },
   ],
   copyright: '© 2026 TradeHub',
 } as const;
