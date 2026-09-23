@@ -4,6 +4,18 @@ Task 005 inventory date: 2026-09-21
 
 ## Founder portraits
 
+### Current approved replacements
+
+The user supplied and approved `aymane.png` and `noureddine.png` from
+`/home/akajjou/Pictures/Screenshots/` to replace the portraits below. Both are
+600×584 pixels. The current site uses `aymane-kajjou-updated.webp` and
+`nour-eddine-ait-bouguarri-updated.webp`, with 320×311 responsive variants.
+These WebP derivatives use quality 86, preserve the complete source framing,
+and contain no copied metadata. Original PNG files remain unchanged.
+The existing rounded card styling, names, biographies, and links are preserved.
+
+### Previous portraits (historical record)
+
 The user supplied both portraits in `/home/akajjou/Desktop/landingPage/` for the public
 TradeHub website. The descriptive filenames match the approved founder associations:
 `noureddin-bg.webp` is Nour-Eddine Ait Bouguarri and `aymane.webp` is Aymane Kajjou.

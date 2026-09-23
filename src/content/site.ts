@@ -215,11 +215,11 @@ export const founders = {
       linkedIn: 'https://www.linkedin.com/in/nour-eddin-ait-bouguarri',
       linkedInLabel: 'View Nour-Eddine on LinkedIn',
       portrait: {
-        src: '/founders/nour-eddine-ait-bouguarri.webp',
+        src: '/founders/nour-eddine-ait-bouguarri-updated.webp',
         srcset:
-          '/founders/nour-eddine-ait-bouguarri-320.webp 320w, /founders/nour-eddine-ait-bouguarri.webp 600w',
+          '/founders/nour-eddine-ait-bouguarri-updated-320.webp 320w, /founders/nour-eddine-ait-bouguarri-updated.webp 600w',
         width: 600,
-        height: 600,
+        height: 584,
         alt: 'Portrait of Nour-Eddine Ait Bouguarri, TradeHub co-founder.',
       },
     },
@@ -230,11 +230,11 @@ export const founders = {
       linkedIn: 'https://www.linkedin.com/in/aymane-kajjou',
       linkedInLabel: 'View Aymane on LinkedIn',
       portrait: {
-        src: '/founders/aymane-kajjou.webp',
+        src: '/founders/aymane-kajjou-updated.webp',
         srcset:
-          '/founders/aymane-kajjou-320.webp 320w, /founders/aymane-kajjou.webp 400w',
-        width: 400,
-        height: 400,
+          '/founders/aymane-kajjou-updated-320.webp 320w, /founders/aymane-kajjou-updated.webp 600w',
+        width: 600,
+        height: 584,
         alt: 'Portrait of Aymane Kajjou, TradeHub co-founder.',
       },
     },
