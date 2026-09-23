@@ -1,12 +1,8 @@
 # Product and scope
 
-TradeHub's public website presents a Morocco-first investing platform that connects market information, virtual investing practice, portfolio tools, and investor community. The primary conversion is a no-registration interactive demo at `/demo`.
+TradeHub's public website presents a Morocco-first investing platform that connects market information, virtual investing practice, portfolio tools, and investor community. The primary action moves visitors to the Product section so they can inspect the four approved product experiences.
 
-The homepage uses a concise bold-startup structure: sticky navigation, direct hero, compact product proof, four authentic product experiences, four-step workflow, one Why TradeHub statement, verified founder experience, founders, final demo CTA, disclaimer, and footer.
-
-## Public-demo boundary
-
-The demo is an isolated browser-local simulation owned by this repository. It uses reviewed synthetic fixtures, simulated balances and activity, deterministic reset, local persistence, and an optional guided tour. It does not import, contact, modify, build, or deploy the separate TradeHub application.
+The homepage uses a concise bold-startup structure: sticky navigation, direct hero, compact product proof, four authentic product experiences in an auto-scrolling carousel, four-step workflow, one Why TradeHub statement, verified founder experience, founders, disclaimer, and footer.
 
 ## Guardrails
 

@@ -1,4 +1,4 @@
-# Landing V2 design system
+# Landing design system
 
 The active public-page direction is a bold technology startup identity using TradeHub's verified near-black, warm-white, sand, and restrained red visual language. System fonts keep the build local and fast. Authentic screenshots and founder portraits remain the only photographic/product media.
 
@@ -12,12 +12,12 @@ Display type is fluid and high contrast; body measure stays near 60–70 charact
 
 The dark sticky header begins as part of the hero composition and gains a denser surface, border, and shadow after scrolling. Desktop shows all destinations. Below 768px, progressive enhancement turns the same links into an accessible sheet with scroll lock, focus entry, focus containment, Escape handling, link-close behavior, and focus return. Without JavaScript, links remain visible in the document.
 
-The hero uses an asymmetric desktop grid and a copy-first mobile stack. The authentic dashboard is the central product object. Product tabs use semantic `tablist`, `tab`, and `tabpanel` roles with roving focus and arrow/Home/End controls. With JavaScript disabled, every panel stays visible. Screenshots retain dimensions, responsive candidates, captions, alt text, and full-size links.
+The hero uses an asymmetric desktop grid and a copy-first mobile stack. The authentic dashboard is the central product object. The Product section retains its four approved captures and descriptions inside a centered carousel. The active slide uses full opacity and scale; adjacent slides remain partially visible with restrained depth, shadow, and glow. Labels, arrows, and dots expose the same selection state. Without JavaScript, every panel stays visible. Screenshots retain dimensions, responsive candidates, captions, alt text, and full-size links.
 
-How it works becomes a four-column flow on wide screens and a vertical stepper on mobile. Why TradeHub uses one statement, a compact flow line, and a status panel. Credibility remains factual and editorial. Founder cards preserve equal weight and authentic portraits. The closing CTA uses abstract code-native bars only; it does not recreate product UI or invent data.
+How it works becomes a four-column flow on wide screens and a vertical stepper on mobile. Why TradeHub uses one statement, a compact flow line, and a status panel. Credibility remains factual and editorial. Founder cards preserve equal weight and authentic portraits.
 
 ## Motion and accessibility
 
-Motion is limited to a one-time hero reveal, short navbar/menu/tab transitions, button feedback, and small image emphasis. There is no parallax, autoplay, continuous loop, carousel, counter, cursor effect, or animation dependency. `prefers-reduced-motion` reduces animation and disables smooth scrolling.
+Motion is limited to a one-time hero reveal, short navbar/menu transitions, button feedback, small image emphasis, and the Product carousel. The carousel advances every 4.6 seconds, pauses on hover or keyboard focus, supports drag and touch swipe, and uses cloned edge slides for a seamless wrap. User controls reset the timer. `prefers-reduced-motion` removes animated transitions, disables autoplay, reduces other animation, and disables smooth scrolling.
 
-The page has one H1, logical headings, semantic landmarks, a focus-visible skip link, 44px targets, visible focus on light and dark surfaces, intrinsic media dimensions, anchor scroll margins, responsive text, and no horizontal overflow. Essential content never depends on animation or hover.
+The page has one H1, logical headings, semantic landmarks, a focus-visible skip link, 44px targets, visible focus on light and dark surfaces, intrinsic media dimensions, anchor scroll margins, responsive text, and no horizontal overflow. The carousel announces the selected item without making essential content depend on motion or hover.

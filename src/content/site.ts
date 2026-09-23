@@ -6,8 +6,6 @@ export const site = {
   navigationLabel: 'Primary navigation',
   menuLabel: 'Menu',
   closeMenuLabel: 'Close menu',
-  primaryAction: 'Try Demo',
-  primaryTarget: '/demo',
   navigation: [
     { label: 'Product', href: '#product' },
     { label: 'How it works', href: '#how-it-works' },
@@ -21,26 +19,22 @@ export const hero = {
   headline: 'Explore the market. Practice investing. See the full picture.',
   introduction:
     'TradeHub connects Moroccan market information, virtual investing, portfolio tracking, and investor community in one product.',
-  primaryAction: 'Try the interactive demo',
-  primaryTarget: '/demo',
+  primaryAction: 'Explore the product',
+  primaryTarget: '#product',
   secondaryAction: 'See how it works',
   secondaryTarget: '#how-it-works',
-  trustItems: [
-    'No registration',
-    'Simulated investing',
-    'No real-money trades',
-  ],
-  visualLabel: 'Demo environment',
+  trustItems: ['Morocco-first', 'Virtual investing', 'Connected experience'],
+  visualLabel: 'TradeHub product',
   visualAlt:
-    'TradeHub market overview with a simulated portfolio summary, market movers, indices, and a captured market heatmap.',
+    'TradeHub market overview with a virtual portfolio summary, market movers, indices, and a captured market heatmap.',
   visualCaption:
-    'Authentic TradeHub interface. Account figures are simulated and market information is shown as captured, not live.',
+    'Authentic TradeHub interface. Virtual account figures are simulated and market information is shown as captured, not live.',
   fullSizeLabel: 'Open the full-size dashboard screenshot',
 } as const;
 
 export const proof = [
-  'No account required',
-  'Simulated buy and sell',
+  'Moroccan market context',
+  'Virtual buy and sell practice',
   'Portfolio and transaction tracking',
   'Market and community in one experience',
 ] as const;
@@ -84,7 +78,7 @@ export const productExperience = {
         height: 940,
         alt: 'TradeHub company view with a captured price chart, virtual trade panel, and simulated pending order.',
         caption:
-          'TradeHub company view with a simulated order panel. Prices, orders, holdings, and results shown are demo data.',
+          'TradeHub company view with a simulated order panel. Prices, orders, holdings, and results shown are virtual product data.',
         fullSizeLabel: 'Open the full virtual-investing screenshot',
       },
     },
@@ -102,7 +96,7 @@ export const productExperience = {
         height: 867,
         alt: 'TradeHub simulated portfolio with summary values, a performance chart, asset allocation, and holdings.',
         caption:
-          'Simulated TradeHub portfolio view. Balances, positions, and performance shown are demo data.',
+          'Simulated TradeHub portfolio view. Balances, positions, and performance shown are virtual product data.',
         fullSizeLabel: 'Open the full portfolio screenshot',
       },
     },
@@ -118,9 +112,9 @@ export const productExperience = {
           '/product/showcase/community-480.webp 480w, /product/showcase/community.webp 701w',
         width: 701,
         height: 768,
-        alt: 'TradeHub community feed with a post composer, approved demo posts, and suggested demo profiles.',
+        alt: 'TradeHub community feed with a post composer, approved sample posts, and suggested sample profiles.',
         caption:
-          'TradeHub community view using approved demo profiles and posts for product illustration.',
+          'TradeHub community view using approved sample profiles and posts for product illustration.',
         fullSizeLabel: 'Open the full community screenshot',
       },
     },
@@ -167,8 +161,8 @@ export const whyTradeHub = {
   flow: ['Market', 'Practice', 'Portfolio', 'Community'],
   status: {
     heading: 'Built and ready to explore.',
-    copy: 'TradeHub is a working product. The public demo lets visitors explore it through an isolated environment using simulated data.',
-    labels: ['Working product', 'Interactive demo', 'Simulated environment'],
+    copy: 'TradeHub is a working product bringing market exploration, virtual investing, portfolio tracking, and community into one connected experience.',
+    labels: ['Working product', 'Four connected experiences', 'Morocco-first'],
   },
 } as const;
 
@@ -232,19 +226,8 @@ export const founders = {
   ],
 } as const;
 
-export const closingDemo = {
-  eyebrow: 'Interactive demo',
-  headline: 'See TradeHub in action.',
-  copy: 'Open the interactive demo and explore the product with guided steps. No account required.',
-  primaryAction: 'Launch the demo',
-  primaryTarget: '/demo',
-  secondaryAction: 'Explore the product',
-  secondaryTarget: '#product',
-  note: 'Demo activity is simulated. No real-money trades are executed.',
-} as const;
-
 export const disclaimer =
-  'TradeHub currently provides a virtual investing environment. Demo balances, transactions, positions, and activity are simulated. TradeHub does not currently execute real-money trades. Financial and market information is provided for informational purposes and does not constitute personalized investment advice.';
+  'TradeHub currently provides a virtual investing environment. Balances, transactions, positions, and activity shown in product captures are simulated. TradeHub does not currently execute real-money trades. Financial and market information is provided for informational purposes and does not constitute personalized investment advice.';
 
 export const footer = {
   descriptor: 'Morocco-first investing platform',
@@ -254,7 +237,6 @@ export const footer = {
     { label: 'How it works', href: '#how-it-works' },
     { label: 'About', href: '#about' },
     { label: 'Founders', href: '#founders' },
-    { label: 'Try Demo', href: '/demo' },
   ],
   copyright: '© 2026 TradeHub',
 } as const;

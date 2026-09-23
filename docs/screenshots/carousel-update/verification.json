@@ -1,0 +1,75 @@
+{
+  "responsive": {
+    "320": {
+      "status": 200,
+      "errors": [],
+      "external": [],
+      "documentWidth": 320,
+      "viewportWidth": 320,
+      "activeCenterDelta": 1,
+      "activeOpacity": "1",
+      "activeTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "originalSlides": 4,
+      "clonedSlides": 2
+    },
+    "390": {
+      "status": 200,
+      "errors": [],
+      "external": [],
+      "documentWidth": 390,
+      "viewportWidth": 390,
+      "activeCenterDelta": 0,
+      "activeOpacity": "1",
+      "activeTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "originalSlides": 4,
+      "clonedSlides": 2
+    },
+    "768": {
+      "status": 200,
+      "errors": [],
+      "external": [],
+      "documentWidth": 768,
+      "viewportWidth": 768,
+      "activeCenterDelta": 0,
+      "activeOpacity": "1",
+      "activeTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "originalSlides": 4,
+      "clonedSlides": 2
+    },
+    "1440": {
+      "status": 200,
+      "errors": [],
+      "external": [],
+      "documentWidth": 1440,
+      "viewportWidth": 1440,
+      "activeCenterDelta": 0,
+      "activeOpacity": "1",
+      "activeTransform": "matrix(1, 0, 0, 1, 0, 0)",
+      "originalSlides": 4,
+      "clonedSlides": 2
+    }
+  },
+  "interactions": {
+    "autoplay": [0, 1],
+    "hoverPauseResume": [0, 0, 1],
+    "infiniteLoop": {
+      "sequence": [0, 1, 2, 3, 0],
+      "activePhysical": 1,
+      "transform": "matrix(1, 0, 0, 1, -926.5, 0)"
+    },
+    "drag": 1,
+    "touchSwipe": 1
+  },
+  "accessibility": {
+    "reducedMotion": [0, 0],
+    "noJavaScriptVisibleSlides": 4,
+    "internalLinks": {
+      "checked": 13,
+      "broken": 0
+    },
+    "mobileMenu": "passed"
+  },
+  "network": {
+    "removedRouteStatus": 404
+  }
+}

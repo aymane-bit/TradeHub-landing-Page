@@ -15,71 +15,105 @@ import { productExperience } from '../content/site';
       <p>{productExperience.introduction}</p>
     </header>
 
-    <div
-      class="product-tabs"
-      role="tablist"
-      aria-label={productExperience.tabsLabel}
-    >
-      {productExperience.items.map((item, index) => (
+    <div class="product-carousel" data-product-carousel>
+      <div
+        class="product-carousel-tabs"
+        role="group"
+        aria-label={productExperience.tabsLabel}
+      >
+        {productExperience.items.map((item, index) => (
+          <button
+            type="button"
+            aria-pressed={index === 0 ? 'true' : 'false'}
+            data-carousel-select={index}
+          >
+            <span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+            {item.label}
+          </button>
+        ))}
+      </div>
+
+      <div
+        class="product-carousel-viewport"
+        data-carousel-viewport
+        aria-roledescription="carousel"
+        aria-label="TradeHub product screenshots"
+      >
+        <div class="product-panels" data-carousel-track>
+          {productExperience.items.map((item, index) => (
+            <article
+              class:list={['product-panel', index === 0 && 'is-active']}
+              aria-label={`${index + 1} of ${productExperience.items.length}: ${item.label}`}
+              data-product-panel={item.id}
+              data-carousel-slide
+            >
+              <div class="product-panel-copy">
+                <p class="product-index">
+                  {String(index + 1).padStart(2, '0')} / 04
+                </p>
+                <h3>{item.heading}</h3>
+                <p>{item.description}</p>
+              </div>
+              <figure class="product-window">
+                <a href={item.image.src} aria-label={item.image.fullSizeLabel}>
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset={item.image.srcset}
+                      sizes="(min-width: 64rem) 58vw, calc(100vw - 2.5rem)"
+                    />
+                    <img
+                      src={item.image.src}
+                      width={item.image.width}
+                      height={item.image.height}
+                      alt={item.image.alt}
+                      loading={index === 0 ? 'eager' : 'lazy'}
+                      decoding="async"
+                    />
+                  </picture>
+                </a>
+                <figcaption>
+                  <span>{item.image.caption}</span>
+                  <a href={item.image.src}>
+                    Full size <span aria-hidden="true">↗</span>
+                  </a>
+                </figcaption>
+              </figure>
+            </article>
+          ))}
+        </div>
+      </div>
+
+      <div class="product-carousel-controls">
         <button
           type="button"
-          role="tab"
-          id={`tab-${item.id}`}
-          aria-controls={`panel-${item.id}`}
-          aria-selected={index === 0 ? 'true' : 'false'}
-          tabindex={index === 0 ? 0 : -1}
-          data-product-tab={item.id}
+          data-carousel-previous
+          aria-label="Previous product view"
         >
-          <span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
-          {item.label}
+          <span aria-hidden="true">←</span>
         </button>
-      ))}
-    </div>
-
-    <div class="product-panels">
-      {productExperience.items.map((item, index) => (
-        <article
-          class:list={['product-panel', index === 0 && 'is-active']}
-          role="tabpanel"
-          id={`panel-${item.id}`}
-          aria-labelledby={`tab-${item.id}`}
-          tabindex="0"
-          data-product-panel={item.id}
+        <p
+          aria-live="polite"
+          aria-atomic="true"
+          class="sr-only"
+          data-carousel-status
         >
-          <div class="product-panel-copy">
-            <p class="product-index">
-              {String(index + 1).padStart(2, '0')} / 04
-            </p>
-            <h3>{item.heading}</h3>
-            <p>{item.description}</p>
-          </div>
-          <figure class="product-window">
-            <a href={item.image.src} aria-label={item.image.fullSizeLabel}>
-              <picture>
-                <source
-                  type="image/webp"
-                  srcset={item.image.srcset}
-                  sizes="(min-width: 64rem) 58vw, calc(100vw - 2.5rem)"
-                />
-                <img
-                  src={item.image.src}
-                  width={item.image.width}
-                  height={item.image.height}
-                  alt={item.image.alt}
-                  loading="lazy"
-                  decoding="async"
-                />
-              </picture>
-            </a>
-            <figcaption>
-              <span>{item.image.caption}</span>
-              <a href={item.image.src}>
-                Full size <span aria-hidden="true">↗</span>
-              </a>
-            </figcaption>
-          </figure>
-        </article>
-      ))}
+          Market, slide 1 of 4
+        </p>
+        <div class="product-carousel-dots" aria-label="Choose a product view">
+          {productExperience.items.map((item, index) => (
+            <button
+              type="button"
+              aria-label={`Show ${item.label}`}
+              aria-current={index === 0 ? 'true' : undefined}
+              data-carousel-dot={index}
+            ></button>
+          ))}
+        </div>
+        <button type="button" data-carousel-next aria-label="Next product view">
+          <span aria-hidden="true">→</span>
+        </button>
+      </div>
     </div>
   </div>
 </section>

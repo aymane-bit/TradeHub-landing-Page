@@ -14,8 +14,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint . --max-warnings 0",
-    "check": "astro check && tsc --noEmit",
-    "test:tour": "node --experimental-strip-types tests/tour.test.mjs"
+    "check": "astro check && tsc --noEmit"
   },
   "dependencies": {
     "astro": "7.3.3"
