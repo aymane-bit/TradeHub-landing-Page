@@ -18,6 +18,7 @@ npm run format:check
 npm run lint
 npm run check
 npm run build
+npm run build:github
 docker compose config --quiet
 docker compose build
 ```
@@ -39,3 +40,5 @@ The homepage progressively enhances its mobile menu and Product carousel with lo
 - `docs/` — product, design, provenance, verification, and completion records.
 
 The production site URL is `https://tradehub.ma`. Final legal review and deployment-specific verification remain required before launch.
+
+Pushes to `main` also build the independent GitHub Pages backup at `https://aymane-bit.github.io/TradeHub-landing-Page/` through `.github/workflows/deploy-github-pages.yml`. Enable **GitHub Actions** as the Pages source once in the repository settings.
