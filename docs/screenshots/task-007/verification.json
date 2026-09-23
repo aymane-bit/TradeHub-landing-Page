@@ -1,0 +1,443 @@
+[
+  {
+    "viewport": "320x568",
+    "route": "/",
+    "info": {
+      "status": 200,
+      "scroll": 320,
+      "client": 320,
+      "h1": 1,
+      "scripts": 0,
+      "forms": 0,
+      "htmlTransfer": 19287,
+      "totalTransfer": 380236,
+      "resourceCount": 4,
+      "domNodes": 271,
+      "fcp": 156,
+      "cls": 0,
+      "reduced": true,
+      "robots": "noindex, nofollow"
+    },
+    "axe": [],
+    "skip": {
+      "active": true,
+      "w": 188.90625,
+      "h": 52.390625
+    },
+    "skipTarget": "main",
+    "darkFocus": {
+      "active": true,
+      "outline": "rgb(242, 216, 183) solid 3px",
+      "outlineColor": "rgb(242, 216, 183)"
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failed": [],
+    "external": []
+  },
+  {
+    "viewport": "320x568",
+    "route": "/demo",
+    "info": {
+      "status": 200,
+      "scroll": 320,
+      "client": 320,
+      "h1": 1,
+      "scripts": 0,
+      "forms": 0,
+      "htmlTransfer": 1527,
+      "totalTransfer": 235082,
+      "resourceCount": 3,
+      "domNodes": 21,
+      "fcp": 100,
+      "cls": 0,
+      "reduced": true,
+      "robots": "noindex, nofollow"
+    },
+    "axe": [],
+    "skip": {
+      "active": true,
+      "w": 188.90625,
+      "h": 52.390625
+    },
+    "skipTarget": "main",
+    "darkFocus": null,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failed": [],
+    "external": []
+  },
+  {
+    "viewport": "390x844",
+    "route": "/",
+    "info": {
+      "status": 200,
+      "scroll": 390,
+      "client": 390,
+      "h1": 1,
+      "scripts": 0,
+      "forms": 0,
+      "htmlTransfer": 19287,
+      "totalTransfer": 380236,
+      "resourceCount": 4,
+      "domNodes": 271,
+      "fcp": 140,
+      "cls": 0,
+      "reduced": true,
+      "robots": "noindex, nofollow"
+    },
+    "axe": [],
+    "skip": {
+      "active": true,
+      "w": 188.90625,
+      "h": 52.390625
+    },
+    "skipTarget": "main",
+    "darkFocus": {
+      "active": true,
+      "outline": "rgb(242, 216, 183) solid 3px",
+      "outlineColor": "rgb(242, 216, 183)"
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failed": [],
+    "external": []
+  },
+  {
+    "viewport": "390x844",
+    "route": "/demo",
+    "info": {
+      "status": 200,
+      "scroll": 390,
+      "client": 390,
+      "h1": 1,
+      "scripts": 0,
+      "forms": 0,
+      "htmlTransfer": 1527,
+      "totalTransfer": 235082,
+      "resourceCount": 3,
+      "domNodes": 21,
+      "fcp": 84,
+      "cls": 0,
+      "reduced": true,
+      "robots": "noindex, nofollow"
+    },
+    "axe": [],
+    "skip": {
+      "active": true,
+      "w": 188.90625,
+      "h": 52.390625
+    },
+    "skipTarget": "main",
+    "darkFocus": null,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failed": [],
+    "external": []
+  },
+  {
+    "viewport": "768x1024",
+    "route": "/",
+    "info": {
+      "status": 200,
+      "scroll": 768,
+      "client": 768,
+      "h1": 1,
+      "scripts": 0,
+      "forms": 0,
+      "htmlTransfer": 19287,
+      "totalTransfer": 379936,
+      "resourceCount": 4,
+      "domNodes": 271,
+      "fcp": 116,
+      "cls": 0,
+      "reduced": true,
+      "robots": "noindex, nofollow"
+    },
+    "axe": [],
+    "skip": {
+      "active": true,
+      "w": 188.90625,
+      "h": 52.390625
+    },
+    "skipTarget": "main",
+    "darkFocus": {
+      "active": true,
+      "outline": "rgb(242, 216, 183) solid 3px",
+      "outlineColor": "rgb(242, 216, 183)"
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failed": [],
+    "external": []
+  },
+  {
+    "viewport": "768x1024",
+    "route": "/demo",
+    "info": {
+      "status": 200,
+      "scroll": 768,
+      "client": 768,
+      "h1": 1,
+      "scripts": 0,
+      "forms": 0,
+      "htmlTransfer": 1527,
+      "totalTransfer": 234782,
+      "resourceCount": 3,
+      "domNodes": 21,
+      "fcp": 72,
+      "cls": 0,
+      "reduced": true,
+      "robots": "noindex, nofollow"
+    },
+    "axe": [],
+    "skip": {
+      "active": true,
+      "w": 188.90625,
+      "h": 52.390625
+    },
+    "skipTarget": "main",
+    "darkFocus": null,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failed": [],
+    "external": []
+  },
+  {
+    "viewport": "1024x768",
+    "route": "/",
+    "info": {
+      "status": 200,
+      "scroll": 1024,
+      "client": 1024,
+      "h1": 1,
+      "scripts": 0,
+      "forms": 0,
+      "htmlTransfer": 19287,
+      "totalTransfer": 379936,
+      "resourceCount": 4,
+      "domNodes": 271,
+      "fcp": 124,
+      "cls": 0,
+      "reduced": true,
+      "robots": "noindex, nofollow"
+    },
+    "axe": [],
+    "skip": {
+      "active": true,
+      "w": 188.90625,
+      "h": 52.390625
+    },
+    "skipTarget": "main",
+    "darkFocus": {
+      "active": true,
+      "outline": "rgb(242, 216, 183) solid 3px",
+      "outlineColor": "rgb(242, 216, 183)"
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failed": [],
+    "external": []
+  },
+  {
+    "viewport": "1024x768",
+    "route": "/demo",
+    "info": {
+      "status": 200,
+      "scroll": 1024,
+      "client": 1024,
+      "h1": 1,
+      "scripts": 0,
+      "forms": 0,
+      "htmlTransfer": 1527,
+      "totalTransfer": 234782,
+      "resourceCount": 3,
+      "domNodes": 21,
+      "fcp": 80,
+      "cls": 0,
+      "reduced": true,
+      "robots": "noindex, nofollow"
+    },
+    "axe": [],
+    "skip": {
+      "active": true,
+      "w": 188.90625,
+      "h": 52.390625
+    },
+    "skipTarget": "main",
+    "darkFocus": null,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failed": [],
+    "external": []
+  },
+  {
+    "viewport": "1440x900",
+    "route": "/",
+    "info": {
+      "status": 200,
+      "scroll": 1440,
+      "client": 1440,
+      "h1": 1,
+      "scripts": 0,
+      "forms": 0,
+      "htmlTransfer": 19287,
+      "totalTransfer": 379936,
+      "resourceCount": 4,
+      "domNodes": 271,
+      "fcp": 96,
+      "cls": 0,
+      "reduced": true,
+      "robots": "noindex, nofollow"
+    },
+    "axe": [],
+    "skip": {
+      "active": true,
+      "w": 188.90625,
+      "h": 52.390625
+    },
+    "skipTarget": "main",
+    "darkFocus": {
+      "active": true,
+      "outline": "rgb(242, 216, 183) solid 3px",
+      "outlineColor": "rgb(242, 216, 183)"
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failed": [],
+    "external": []
+  },
+  {
+    "viewport": "1440x900",
+    "route": "/demo",
+    "info": {
+      "status": 200,
+      "scroll": 1440,
+      "client": 1440,
+      "h1": 1,
+      "scripts": 0,
+      "forms": 0,
+      "htmlTransfer": 1527,
+      "totalTransfer": 234782,
+      "resourceCount": 3,
+      "domNodes": 21,
+      "fcp": 72,
+      "cls": 0,
+      "reduced": true,
+      "robots": "noindex, nofollow"
+    },
+    "axe": [],
+    "skip": {
+      "active": true,
+      "w": 188.90625,
+      "h": 52.390625
+    },
+    "skipTarget": "main",
+    "darkFocus": null,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failed": [],
+    "external": []
+  },
+  {
+    "viewport": "1920x1080",
+    "route": "/",
+    "info": {
+      "status": 200,
+      "scroll": 1920,
+      "client": 1920,
+      "h1": 1,
+      "scripts": 0,
+      "forms": 0,
+      "htmlTransfer": 19287,
+      "totalTransfer": 379936,
+      "resourceCount": 4,
+      "domNodes": 271,
+      "fcp": 256,
+      "cls": 0,
+      "reduced": true,
+      "robots": "noindex, nofollow"
+    },
+    "axe": [],
+    "skip": {
+      "active": true,
+      "w": 188.90625,
+      "h": 52.390625
+    },
+    "skipTarget": "main",
+    "darkFocus": {
+      "active": true,
+      "outline": "rgb(242, 216, 183) solid 3px",
+      "outlineColor": "rgb(242, 216, 183)"
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failed": [],
+    "external": []
+  },
+  {
+    "viewport": "1920x1080",
+    "route": "/demo",
+    "info": {
+      "status": 200,
+      "scroll": 1920,
+      "client": 1920,
+      "h1": 1,
+      "scripts": 0,
+      "forms": 0,
+      "htmlTransfer": 1527,
+      "totalTransfer": 234782,
+      "resourceCount": 3,
+      "domNodes": 21,
+      "fcp": 64,
+      "cls": 0,
+      "reduced": true,
+      "robots": "noindex, nofollow"
+    },
+    "axe": [],
+    "skip": {
+      "active": true,
+      "w": 188.90625,
+      "h": 52.390625
+    },
+    "skipTarget": "main",
+    "darkFocus": null,
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failed": [],
+    "external": []
+  },
+  {
+    "javaScriptEnabled": false,
+    "home": {
+      "sections": 9,
+      "images": 9,
+      "demoLinks": 4,
+      "footer": true
+    },
+    "demo": {
+      "h1": "TradeHub demo environment",
+      "back": true
+    }
+  },
+  {
+    "javaScriptEnabled": true,
+    "home": {
+      "sections": 9,
+      "images": 9,
+      "demoLinks": 4,
+      "footer": true
+    },
+    "demo": {
+      "h1": "TradeHub demo environment",
+      "back": true
+    }
+  },
+  {
+    "imagesBlocked": true,
+    "headings": 28,
+    "captions": 5,
+    "founderNames": ["Nour-Eddine Ait Bouguarri", "Aymane Kajjou"],
+    "closing": true
+  }
+]

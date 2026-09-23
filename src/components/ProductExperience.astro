@@ -1,0 +1,85 @@
+---
+import { productExperience } from '../content/site';
+---
+
+<section
+  class="section product-experience"
+  id="product"
+  aria-labelledby="product-title"
+  data-product-experience
+>
+  <div class="container">
+    <header class="section-heading reveal">
+      <p class="section-label">{productExperience.eyebrow}</p>
+      <h2 id="product-title">{productExperience.headline}</h2>
+      <p>{productExperience.introduction}</p>
+    </header>
+
+    <div
+      class="product-tabs"
+      role="tablist"
+      aria-label={productExperience.tabsLabel}
+    >
+      {productExperience.items.map((item, index) => (
+        <button
+          type="button"
+          role="tab"
+          id={`tab-${item.id}`}
+          aria-controls={`panel-${item.id}`}
+          aria-selected={index === 0 ? 'true' : 'false'}
+          tabindex={index === 0 ? 0 : -1}
+          data-product-tab={item.id}
+        >
+          <span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+          {item.label}
+        </button>
+      ))}
+    </div>
+
+    <div class="product-panels">
+      {productExperience.items.map((item, index) => (
+        <article
+          class:list={['product-panel', index === 0 && 'is-active']}
+          role="tabpanel"
+          id={`panel-${item.id}`}
+          aria-labelledby={`tab-${item.id}`}
+          tabindex="0"
+          data-product-panel={item.id}
+        >
+          <div class="product-panel-copy">
+            <p class="product-index">
+              {String(index + 1).padStart(2, '0')} / 04
+            </p>
+            <h3>{item.heading}</h3>
+            <p>{item.description}</p>
+          </div>
+          <figure class="product-window">
+            <a href={item.image.src} aria-label={item.image.fullSizeLabel}>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset={item.image.srcset}
+                  sizes="(min-width: 64rem) 58vw, calc(100vw - 2.5rem)"
+                />
+                <img
+                  src={item.image.src}
+                  width={item.image.width}
+                  height={item.image.height}
+                  alt={item.image.alt}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </a>
+            <figcaption>
+              <span>{item.image.caption}</span>
+              <a href={item.image.src}>
+                Full size <span aria-hidden="true">↗</span>
+              </a>
+            </figcaption>
+          </figure>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

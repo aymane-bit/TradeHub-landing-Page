@@ -1,0 +1,294 @@
+{
+  "summary": {
+    "before / 390x844": {
+      "lcp": 84,
+      "fcp": 84,
+      "cls": 0,
+      "transfer": 372999
+    },
+    "before / 1440x900": {
+      "lcp": 92,
+      "fcp": 92,
+      "cls": 0,
+      "transfer": 372999
+    },
+    "before /demo 390x844": {
+      "lcp": 72,
+      "fcp": 72,
+      "cls": 0,
+      "transfer": 227876
+    },
+    "before /demo 1440x900": {
+      "lcp": 72,
+      "fcp": 72,
+      "cls": 0,
+      "transfer": 227876
+    },
+    "after / 390x844": {
+      "lcp": 112,
+      "fcp": 112,
+      "cls": 0,
+      "transfer": 379936
+    },
+    "after / 1440x900": {
+      "lcp": 172,
+      "fcp": 156,
+      "cls": 0,
+      "transfer": 379936
+    },
+    "after /demo 390x844": {
+      "lcp": 80,
+      "fcp": 80,
+      "cls": 0,
+      "transfer": 234782
+    },
+    "after /demo 1440x900": {
+      "lcp": 96,
+      "fcp": 96,
+      "cls": 0,
+      "transfer": 234782
+    }
+  },
+  "runs": [
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": "390x844",
+      "run": 1,
+      "lcp": 124,
+      "cls": 0,
+      "fcp": 124,
+      "transfer": 372999
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": "390x844",
+      "run": 2,
+      "lcp": 84,
+      "cls": 0,
+      "fcp": 84,
+      "transfer": 372999
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": "390x844",
+      "run": 3,
+      "lcp": 76,
+      "cls": 0,
+      "fcp": 76,
+      "transfer": 372999
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": "1440x900",
+      "run": 1,
+      "lcp": 92,
+      "cls": 0,
+      "fcp": 92,
+      "transfer": 372999
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": "1440x900",
+      "run": 2,
+      "lcp": 176,
+      "cls": 0,
+      "fcp": 160,
+      "transfer": 372999
+    },
+    {
+      "phase": "before",
+      "route": "/",
+      "viewport": "1440x900",
+      "run": 3,
+      "lcp": 88,
+      "cls": 0,
+      "fcp": 88,
+      "transfer": 372999
+    },
+    {
+      "phase": "before",
+      "route": "/demo",
+      "viewport": "390x844",
+      "run": 1,
+      "lcp": 60,
+      "cls": 0,
+      "fcp": 60,
+      "transfer": 227876
+    },
+    {
+      "phase": "before",
+      "route": "/demo",
+      "viewport": "390x844",
+      "run": 2,
+      "lcp": 72,
+      "cls": 0,
+      "fcp": 72,
+      "transfer": 227876
+    },
+    {
+      "phase": "before",
+      "route": "/demo",
+      "viewport": "390x844",
+      "run": 3,
+      "lcp": 72,
+      "cls": 0,
+      "fcp": 72,
+      "transfer": 227876
+    },
+    {
+      "phase": "before",
+      "route": "/demo",
+      "viewport": "1440x900",
+      "run": 1,
+      "lcp": 72,
+      "cls": 0,
+      "fcp": 72,
+      "transfer": 227876
+    },
+    {
+      "phase": "before",
+      "route": "/demo",
+      "viewport": "1440x900",
+      "run": 2,
+      "lcp": 72,
+      "cls": 0,
+      "fcp": 72,
+      "transfer": 227876
+    },
+    {
+      "phase": "before",
+      "route": "/demo",
+      "viewport": "1440x900",
+      "run": 3,
+      "lcp": 64,
+      "cls": 0,
+      "fcp": 64,
+      "transfer": 227876
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": "390x844",
+      "run": 1,
+      "lcp": 112,
+      "cls": 0,
+      "fcp": 112,
+      "transfer": 379936
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": "390x844",
+      "run": 2,
+      "lcp": 108,
+      "cls": 0,
+      "fcp": 108,
+      "transfer": 379936
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": "390x844",
+      "run": 3,
+      "lcp": 116,
+      "cls": 0,
+      "fcp": 116,
+      "transfer": 379936
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": "1440x900",
+      "run": 1,
+      "lcp": 172,
+      "cls": 0,
+      "fcp": 132,
+      "transfer": 379936
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": "1440x900",
+      "run": 2,
+      "lcp": 156,
+      "cls": 0,
+      "fcp": 156,
+      "transfer": 379936
+    },
+    {
+      "phase": "after",
+      "route": "/",
+      "viewport": "1440x900",
+      "run": 3,
+      "lcp": 184,
+      "cls": 0,
+      "fcp": 160,
+      "transfer": 379936
+    },
+    {
+      "phase": "after",
+      "route": "/demo",
+      "viewport": "390x844",
+      "run": 1,
+      "lcp": 112,
+      "cls": 0,
+      "fcp": 112,
+      "transfer": 234782
+    },
+    {
+      "phase": "after",
+      "route": "/demo",
+      "viewport": "390x844",
+      "run": 2,
+      "lcp": 68,
+      "cls": 0,
+      "fcp": 68,
+      "transfer": 234782
+    },
+    {
+      "phase": "after",
+      "route": "/demo",
+      "viewport": "390x844",
+      "run": 3,
+      "lcp": 80,
+      "cls": 0,
+      "fcp": 80,
+      "transfer": 234782
+    },
+    {
+      "phase": "after",
+      "route": "/demo",
+      "viewport": "1440x900",
+      "run": 1,
+      "lcp": 84,
+      "cls": 0,
+      "fcp": 84,
+      "transfer": 234782
+    },
+    {
+      "phase": "after",
+      "route": "/demo",
+      "viewport": "1440x900",
+      "run": 2,
+      "lcp": 100,
+      "cls": 0,
+      "fcp": 100,
+      "transfer": 234782
+    },
+    {
+      "phase": "after",
+      "route": "/demo",
+      "viewport": "1440x900",
+      "run": 3,
+      "lcp": 96,
+      "cls": 0,
+      "fcp": 96,
+      "transfer": 234782
+    }
+  ]
+}

@@ -3,28 +3,24 @@ import { founders } from '../content/site';
 ---
 
 <section
-  class="story-section founders-section"
+  class="section founders"
   id="founders"
   aria-labelledby="founders-title"
 >
   <div class="container">
-    <header class="founders-introduction">
-      <div class="section-introduction">
-        <p class="section-eyebrow">{founders.eyebrow}</p>
-        <h2 id="founders-title">{founders.headline}</h2>
-      </div>
-      <p class="section-lead">{founders.introduction}</p>
+    <header class="section-heading section-heading-inline reveal">
+      <p class="section-label">{founders.eyebrow}</p>
+      <h2 id="founders-title">{founders.headline}</h2>
     </header>
-
     <div class="founder-grid">
-      {founders.profiles.map((founder) => (
-        <article class="founder-profile">
-          <figure class="founder-portrait">
+      {founders.profiles.map((founder, index) => (
+        <article class="founder-card reveal">
+          <figure>
             <picture>
               <source
                 type="image/webp"
                 srcset={founder.portrait.srcset}
-                sizes="(min-width: 64rem) 25rem, calc(100vw - 2.5rem)"
+                sizes="(min-width: 48rem) 19rem, calc(100vw - 2.5rem)"
               />
               <img
                 src={founder.portrait.src}
@@ -35,13 +31,15 @@ import { founders } from '../content/site';
                 decoding="async"
               />
             </picture>
+            <span aria-hidden="true">0{index + 1}</span>
           </figure>
           <div class="founder-copy">
             <p class="founder-role">{founder.role}</p>
             <h3>{founder.name}</h3>
             <p>{founder.bio}</p>
-            <a class="founder-link" href={founder.linkedIn}>
+            <a href={founder.linkedIn}>
               {founder.linkedInLabel}
+              <span aria-hidden="true">↗</span>
             </a>
           </div>
         </article>

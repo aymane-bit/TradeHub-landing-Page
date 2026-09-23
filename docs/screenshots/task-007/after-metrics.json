@@ -1,0 +1,122 @@
+[
+  {
+    "viewport": "320x568",
+    "route": "/",
+    "htmlTransfer": 19287,
+    "totalTransfer": 380236,
+    "resourceCount": 4,
+    "domNodes": 271,
+    "fcp": 156,
+    "cls": 0
+  },
+  {
+    "viewport": "320x568",
+    "route": "/demo",
+    "htmlTransfer": 1527,
+    "totalTransfer": 235082,
+    "resourceCount": 3,
+    "domNodes": 21,
+    "fcp": 100,
+    "cls": 0
+  },
+  {
+    "viewport": "390x844",
+    "route": "/",
+    "htmlTransfer": 19287,
+    "totalTransfer": 380236,
+    "resourceCount": 4,
+    "domNodes": 271,
+    "fcp": 140,
+    "cls": 0
+  },
+  {
+    "viewport": "390x844",
+    "route": "/demo",
+    "htmlTransfer": 1527,
+    "totalTransfer": 235082,
+    "resourceCount": 3,
+    "domNodes": 21,
+    "fcp": 84,
+    "cls": 0
+  },
+  {
+    "viewport": "768x1024",
+    "route": "/",
+    "htmlTransfer": 19287,
+    "totalTransfer": 379936,
+    "resourceCount": 4,
+    "domNodes": 271,
+    "fcp": 116,
+    "cls": 0
+  },
+  {
+    "viewport": "768x1024",
+    "route": "/demo",
+    "htmlTransfer": 1527,
+    "totalTransfer": 234782,
+    "resourceCount": 3,
+    "domNodes": 21,
+    "fcp": 72,
+    "cls": 0
+  },
+  {
+    "viewport": "1024x768",
+    "route": "/",
+    "htmlTransfer": 19287,
+    "totalTransfer": 379936,
+    "resourceCount": 4,
+    "domNodes": 271,
+    "fcp": 124,
+    "cls": 0
+  },
+  {
+    "viewport": "1024x768",
+    "route": "/demo",
+    "htmlTransfer": 1527,
+    "totalTransfer": 234782,
+    "resourceCount": 3,
+    "domNodes": 21,
+    "fcp": 80,
+    "cls": 0
+  },
+  {
+    "viewport": "1440x900",
+    "route": "/",
+    "htmlTransfer": 19287,
+    "totalTransfer": 379936,
+    "resourceCount": 4,
+    "domNodes": 271,
+    "fcp": 96,
+    "cls": 0
+  },
+  {
+    "viewport": "1440x900",
+    "route": "/demo",
+    "htmlTransfer": 1527,
+    "totalTransfer": 234782,
+    "resourceCount": 3,
+    "domNodes": 21,
+    "fcp": 72,
+    "cls": 0
+  },
+  {
+    "viewport": "1920x1080",
+    "route": "/",
+    "htmlTransfer": 19287,
+    "totalTransfer": 379936,
+    "resourceCount": 4,
+    "domNodes": 271,
+    "fcp": 256,
+    "cls": 0
+  },
+  {
+    "viewport": "1920x1080",
+    "route": "/demo",
+    "htmlTransfer": 1527,
+    "totalTransfer": 234782,
+    "resourceCount": 3,
+    "domNodes": 21,
+    "fcp": 64,
+    "cls": 0
+  }
+]

@@ -2,13 +2,16 @@
 import { disclaimer, footer, site } from '../content/site';
 ---
 
-<div class="disclaimer" aria-label="Important information">
-  <p class="container">{disclaimer}</p>
-</div>
 <footer class="site-footer">
-  <div class="container footer-inner">
+  <div class="disclaimer" aria-labelledby="disclaimer-title">
+    <div class="container disclaimer-inner">
+      <h2 id="disclaimer-title">Important information</h2>
+      <p>{disclaimer}</p>
+    </div>
+  </div>
+  <div class="container footer-main">
     <div class="footer-brand">
-      <a class="wordmark" href="#top" aria-label={site.homeLabel}>
+      <a class="wordmark wordmark-dark" href="#top" aria-label={site.homeLabel}>
         <span class="brand-image">
           <img
             src="/brand/tradehub.webp"
@@ -21,7 +24,7 @@ import { disclaimer, footer, site } from '../content/site';
       <p>{footer.descriptor}</p>
     </div>
     <nav aria-label={footer.navigationLabel}>
-      <ul class="footer-links">
+      <ul>
         {footer.links.map((link) => (
           <li>
             <a href={link.href}>{link.label}</a>

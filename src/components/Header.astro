@@ -2,7 +2,7 @@
 import { site } from '../content/site';
 ---
 
-<header class="site-header">
+<header class="site-header" data-site-header>
   <div class="container header-inner">
     <a class="wordmark" href="#top" aria-label={site.homeLabel}>
       <span class="brand-image">
@@ -14,8 +14,33 @@ import { site } from '../content/site';
         />
       </span>
     </a>
-    <nav aria-label={site.navigationLabel}>
-      <a class="button button-primary header-action" href={site.primaryTarget}>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="primary-navigation"
+      data-menu-toggle
+    >
+      <span data-menu-label>{site.menuLabel}</span>
+      <span class="menu-icon" aria-hidden="true">
+        <i></i>
+        <i></i>
+      </span>
+    </button>
+
+    <nav
+      id="primary-navigation"
+      class="primary-navigation"
+      aria-label={site.navigationLabel}
+      data-navigation
+    >
+      <div class="navigation-links">
+        {site.navigation.map((link) => (
+          <a href={link.href}>{link.label}</a>
+        ))}
+      </div>
+      <a class="button button-signal nav-demo" href={site.primaryTarget}>
         {site.primaryAction}
       </a>
     </nav>

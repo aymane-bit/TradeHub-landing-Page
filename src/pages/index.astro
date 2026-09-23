@@ -2,26 +2,27 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ClosingDemo from '../components/ClosingDemo.astro';
 import Credibility from '../components/Credibility.astro';
-import CurrentStage from '../components/CurrentStage.astro';
-import FragmentedExperience from '../components/FragmentedExperience.astro';
 import Founders from '../components/Founders.astro';
 import Hero from '../components/Hero.astro';
-import IntegratedSolution from '../components/IntegratedSolution.astro';
-import ProductPillars from '../components/ProductPillars.astro';
-import ProductShowcase from '../components/ProductShowcase.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import ProductExperience from '../components/ProductExperience.astro';
+import ProductProof from '../components/ProductProof.astro';
 import SiteFooter from '../components/SiteFooter.astro';
+import WhyTradeHub from '../components/WhyTradeHub.astro';
 import { site } from '../content/site';
 ---
 
-<BaseLayout title={site.title}>
+<BaseLayout title={site.title} pageClass="landing-page">
   <Hero />
-  <FragmentedExperience />
-  <IntegratedSolution />
-  <ProductPillars />
-  <ProductShowcase />
-  <CurrentStage />
+  <ProductProof />
+  <ProductExperience />
+  <HowItWorks />
+  <WhyTradeHub />
   <Credibility />
   <Founders />
   <ClosingDemo />
   <SiteFooter />
+  <script>
+    import '../scripts/landing';
+  </script>
 </BaseLayout>

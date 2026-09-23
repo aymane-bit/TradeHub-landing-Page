@@ -1,26 +1,31 @@
-/* Task 002 provisional presentation tokens, not verified TradeHub brand values.
-   TODO: approve identity assets before adding brand red, beige, or custom fonts. */
+/* Landing V2 bold technology startup system. Local/system fonts only. */
 :root {
   color-scheme: light;
-  --color-background: #fff;
-  --color-surface: #f4f4f4;
-  --color-text: #171717;
-  --color-muted: #595959;
-  --color-border: #d8d8d8;
-  --color-action: #171717;
-  --color-action-hover: #383838;
-  --color-on-action: #fff;
-  --color-focus: #171717;
+  --color-ink: #0c0f0d;
+  --color-ink-soft: #141815;
+  --color-ink-raised: #1b201c;
+  --color-paper: #fbfaf6;
+  --color-white: #ffffff;
+  --color-sand: #c7b69d;
+  --color-sand-strong: #9f8767;
+  --color-sand-soft: #eee8de;
+  --color-signal: #bd3933;
+  --color-signal-hover: #d44942;
+  --color-text: #151815;
+  --color-muted: #62665f;
+  --color-muted-light: #adb3aa;
+  --color-line: rgba(12, 15, 13, 0.16);
+  --color-line-dark: rgba(255, 255, 255, 0.14);
+  --color-focus: #df4b44;
   --font-body:
     system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-small: 0.8125rem;
   --font-body-size: 1rem;
-  --font-lead: clamp(1.0625rem, 1.5vw, 1.1875rem);
-  --font-heading: clamp(2.625rem, 5.3vw, 4.625rem);
-  --font-section-heading: clamp(2.25rem, 4.25vw, 4rem);
-  --line-body: 1.65;
-  --line-heading: 1.04;
-  --tracking-heading: -0.055em;
+  --font-lead: clamp(1.0625rem, 1.35vw, 1.22rem);
+  --font-display: clamp(3rem, 5.8vw, 5.8rem);
+  --font-section: clamp(2.35rem, 5.2vw, 5.1rem);
+  --line-body: 1.62;
+  --line-heading: 0.94;
+  --tracking-heading: -0.065em;
   --space-1: 0.5rem;
   --space-2: 0.75rem;
   --space-3: 1rem;
@@ -28,13 +33,18 @@
   --space-5: 2rem;
   --space-6: 3rem;
   --space-7: 4.5rem;
+  --space-8: 7rem;
   --space-page: clamp(1.25rem, 4vw, 4rem);
-  --content-width: 80rem;
-  --radius-control: 0.375rem;
-  --radius-surface: 0.75rem;
-  --border-subtle: 1px solid var(--color-border);
-  --shadow-surface: none;
+  --content-width: 82rem;
+  --text-measure: 66ch;
+  --radius-control: 0.45rem;
+  --radius-card: 0.85rem;
+  --radius-frame: 1.15rem;
   --target-size: 3rem;
-  --motion-duration: 120ms;
-  --motion-easing: ease-out;
+  --header-height: 4.75rem;
+  --shadow-product:
+    0 38px 100px rgba(0, 0, 0, 0.42), 0 8px 25px rgba(0, 0, 0, 0.24);
+  --motion-fast: 180ms;
+  --motion-medium: 460ms;
+  --motion-easing: cubic-bezier(0.2, 0.7, 0.2, 1);
 }

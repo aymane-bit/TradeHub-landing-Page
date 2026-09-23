@@ -1,53 +1,63 @@
 ---
-import { hero, site } from '../content/site';
+import { hero } from '../content/site';
 ---
 
-<section class="hero container" aria-labelledby="hero-title">
-  <div class="hero-copy">
-    <p class="eyebrow">
-      <span class="status-dot" aria-hidden="true"></span>
-      {hero.eyebrow}
-    </p>
-    <h1 id="hero-title">{hero.headline}</h1>
-    <p class="hero-introduction">{hero.introduction}</p>
-    <p class="product-status">{hero.status}</p>
-    <div class="hero-actions">
-      <a class="button button-primary" href={site.primaryTarget}>
-        {site.primaryAction}
-      </a>
-      <a class="button button-secondary" href={site.secondaryTarget}>
-        {site.secondaryAction}
-      </a>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-grid container">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">
+        <span aria-hidden="true"></span>
+        {hero.eyebrow}
+      </p>
+      <h1 id="hero-title">{hero.headline}</h1>
+      <p class="hero-introduction">{hero.introduction}</p>
+      <div class="hero-actions">
+        <a class="button button-signal" href={hero.primaryTarget}>
+          {hero.primaryAction}
+          <span aria-hidden="true">↗</span>
+        </a>
+        <a class="button button-ghost-dark" href={hero.secondaryTarget}>
+          {hero.secondaryAction}
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+      <ul class="trust-line" aria-label="Demo status">
+        {hero.trustItems.map((item) => (
+          <li>{item}</li>
+        ))}
+      </ul>
     </div>
-    <p class="action-note">{hero.helper}</p>
-    <p class="clarity-note">{hero.clarity}</p>
+
+    <figure class="hero-product reveal" aria-labelledby="hero-product-caption">
+      <div class="product-orbit product-orbit-one" aria-hidden="true"></div>
+      <div class="product-orbit product-orbit-two" aria-hidden="true"></div>
+      <div class="hero-product-bar">
+        <span>
+          <i aria-hidden="true"></i>
+          {hero.visualLabel}
+        </span>
+        <span>TradeHub / Overview</span>
+      </div>
+      <a
+        class="hero-product-link"
+        href="/product/market-overview.webp"
+        aria-label={hero.fullSizeLabel}
+      >
+        <img
+          src="/product/market-overview.webp"
+          width="1024"
+          height="987"
+          alt={hero.visualAlt}
+          decoding="async"
+          fetchpriority="high"
+        />
+      </a>
+      <figcaption id="hero-product-caption">
+        <span>{hero.visualCaption}</span>
+        <a href="/product/market-overview.webp">
+          View full size <span aria-hidden="true">↗</span>
+        </a>
+      </figcaption>
+    </figure>
   </div>
-  <figure
-    class="product-preview"
-    id="product-preview"
-    tabindex="-1"
-    aria-labelledby="preview-label"
-  >
-    <figcaption id="preview-label" class="visual-heading">
-      {hero.visualLabel}
-    </figcaption>
-    <a
-      class="product-image-link"
-      href="/product/market-overview.webp"
-      aria-label={hero.fullSizeLabel}
-    >
-      <img
-        class="product-image"
-        src="/product/market-overview.webp"
-        width="1024"
-        height="987"
-        alt={hero.visualAlt}
-        decoding="async"
-      />
-    </a>
-    <p class="visual-caption">{hero.visualCaption}</p>
-    <a class="image-hint" href="/product/market-overview.webp">
-      {hero.fullSizeLabel}
-    </a>
-  </figure>
 </section>

@@ -1,0 +1,14 @@
+---
+import { proof } from '../content/site';
+---
+
+<section class="proof-strip" aria-label="Product proof">
+  <ul class="container proof-list">
+    {proof.map((item, index) => (
+      <li>
+        <span aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+        {item}
+      </li>
+    ))}
+  </ul>
+</section>

@@ -1,94 +1,37 @@
 # Approved current public content
 
-All editable Task 006 public copy and destinations are centralized in
-`src/content/site.ts`. The rendered page order is Header, Hero, Problem, Integrated
-approach, Product pillars, Real product showcase, Current stage, Verified achievements,
-Founders, Closing demo CTA, Disclaimer, Footer.
+The landing-page V2 copy and destinations are centralized in `src/content/site.ts`. The current order is sticky navigation, hero, compact product proof, interactive product experience, How it works, Why TradeHub with product status, Credibility, Founders, final demo CTA, disclaimer, and footer.
 
-## Conversion system
+## Conversion and navigation
 
-- Primary: **Try the Demo** → `/demo` in the header, hero, and closing CTA.
-- Secondary: **See the Product** → `#showcase` in the hero.
-- No action opens a new tab or includes tracking parameters.
+The primary conversion is the isolated `/demo` route. Desktop and mobile navigation use Product (`#product`), How it works (`#how-it-works`), About (`#about`), Founders (`#founders`), and Try Demo (`/demo`). Hero actions are **Try the interactive demo** and **See how it works**. Closing actions are **Launch the demo** and **Explore the product**.
 
-## Hero
+## Public positioning
 
-- Eyebrow: **Interactive demo**
-- Heading: **Investing in Morocco, brought together.**
-- Introduction: **TradeHub is a Morocco-first investing platform bringing market
-  information, investing practice, portfolio tools, and investor community into one
-  integrated experience.**
-- Status: **A working TradeHub product already exists. Explore the experience through a
-  controlled virtual demo built with simulated data.**
-- Helper: **No registration required. Demo activity is simulated and does not execute
-  real-money trades.**
-- Boundary: **TradeHub currently provides a virtual investing environment. Real-money
-  trade execution is not currently available.**
+- Eyebrow: **A Morocco-first investing platform**
+- Headline: **Explore the market. Practice investing. See the full picture.**
+- Introduction: **TradeHub connects Moroccan market information, virtual investing, portfolio tracking, and investor community in one product.**
+- Status: **No registration · Simulated investing · No real-money trades**
 
-The authentic product capture and its existing simulation/captured-data caption remain.
-The old availability strip has been removed without a replacement strip.
+TradeHub brings together market information, virtual investing practice, portfolio tools, and investor community. Virtual investing is one part of the product. The public demo is isolated, requires no account, and uses simulated data.
 
-## Product narrative retained
+## Product experience
 
-The constructive fragmentation problem, integrated approach, four product pillars,
-authentic product showcase, verified achievements, and founder section remain as
-approved through Task 005. Product screenshots remain local authentic captures with
-simulation and captured-market-information qualifications. Achievement attribution and
-founder copy are unchanged.
+Four accessible product tabs use approved authentic captures:
 
-## Current stage
+1. **Market — Find the company. Understand the context.** Search the Moroccan market, compare movement, and open detailed company information from one place.
+2. **Practice — Test a decision before risking real money.** Use a simulated balance to practice buy and sell decisions through the real TradeHub workflow.
+3. **Portfolio — Follow what changed.** See positions, allocation, performance, and transaction history in one connected view.
+4. **Community — Keep the conversation close to the market.** Discuss companies and ideas, follow activity, and explore the community around the investing experience.
 
-- Eyebrow: **Current stage**
-- Heading: **Built for hands-on exploration.**
-- Lead: **A working TradeHub platform already exists. Visitors can explore the product
-  through an isolated virtual demo without creating an account.**
-- Support: **The demo uses simulated balances, positions, transactions, watchlists, and
-  community content so people can understand the experience without real-money
-  execution.**
-- **Built** — A working product brings the core TradeHub experience together.
-- **Explore** — The public demo provides a controlled environment for hands-on product
-  exploration.
-- **Long-term direction** — TradeHub's broader vision is to connect more of the Moroccan
-  retail-investing journey over time.
+Without JavaScript, the four experiences remain visible as a vertical sequence. Captions qualify captured market information and simulated activity.
 
-## Closing demo CTA
+## Credibility and founders
 
-- Eyebrow: **Try TradeHub**
-- Heading: **Explore the product for yourself.**
-- Support: **Open a preloaded demo environment to explore market information, virtual
-  investing, portfolio tools, and community features—without registration.**
-- Action: **Try the Demo** → `/demo`
-- Note: **All demo balances, positions, transactions, and activity are simulated. No
-  real-money trades are executed.**
+The two achievement statements retain their exact approved attribution and qualification. Founder portraits, names, roles, bios, and clean LinkedIn destinations remain based on the approved Task 005 provenance record. No institutional logos, endorsement claims, invented responsibilities, contacts, testimonials, or traction claims are present.
 
-## Disclaimer and footer
+## Disclaimer
 
-Visible provisional disclaimer:
+> TradeHub currently provides a virtual investing environment. Demo balances, transactions, positions, and activity are simulated. TradeHub does not currently execute real-money trades. Financial and market information is provided for informational purposes and does not constitute personalized investment advice.
 
-> TradeHub currently provides a virtual investing environment. Demo balances,
-> transactions, positions, and activity are simulated. TradeHub does not currently
-> execute real-money trades. Financial and market information is provided for
-> informational purposes and does not constitute personalized investment advice.
-
-The footer contains the local TradeHub wordmark, **Morocco-first investing platform.**,
-Product and Founders internal links, **Try the Demo**, and **© 2026 TradeHub.** It has no
-contact, legal, social, newsletter, or language destinations.
-
-## Temporary demo handoff
-
-`/demo` has one H1: **TradeHub demo environment**. It displays:
-
-- **Development handoff — not the final public demo**
-- **The isolated interactive demo is being connected to the TradeHub product
-  experience. It will use simulated data and will not execute real-money trades.**
-- **Back to the TradeHub website** → `/`
-
-It uses the local wordmark and existing tokens, contains no fake interface or data,
-collects nothing, uses no client JavaScript or third party, and remains
-`noindex, nofollow`. It must be replaced before public launch.
-
-## Decision record
-
-TradeHub no longer uses an early-access or waitlist conversion. The public website now
-directs visitors to a no-registration, isolated, simulated product demo. Historical
-task reports may describe the superseded early-access direction.
+The footer includes the TradeHub wordmark, **Morocco-first investing platform**, section links, Try Demo, and **© 2026 TradeHub**. Final legal review remains required before public launch.

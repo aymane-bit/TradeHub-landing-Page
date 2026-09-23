@@ -1,0 +1,193 @@
+{
+  "matrix": [
+    {
+      "viewport": "320x568",
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "height": 9907,
+      "menu": "flex",
+      "panels": 1,
+      "h1": 1,
+      "brokenImages": 0,
+      "words": 541,
+      "dom": 282,
+      "overflow": false
+    },
+    {
+      "viewport": "390x844",
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "height": 9680,
+      "menu": "flex",
+      "panels": 1,
+      "h1": 1,
+      "brokenImages": 0,
+      "words": 541,
+      "dom": 282,
+      "overflow": false
+    },
+    {
+      "viewport": "640x800",
+      "clientWidth": 640,
+      "scrollWidth": 640,
+      "height": 8668,
+      "menu": "flex",
+      "panels": 1,
+      "h1": 1,
+      "brokenImages": 0,
+      "words": 541,
+      "dom": 282,
+      "overflow": false
+    },
+    {
+      "viewport": "768x1024",
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "height": 8658,
+      "menu": "none",
+      "panels": 1,
+      "h1": 1,
+      "brokenImages": 0,
+      "words": 541,
+      "dom": 282,
+      "overflow": false
+    },
+    {
+      "viewport": "1024x768",
+      "clientWidth": 1024,
+      "scrollWidth": 1024,
+      "height": 7004,
+      "menu": "none",
+      "panels": 1,
+      "h1": 1,
+      "brokenImages": 0,
+      "words": 541,
+      "dom": 282,
+      "overflow": false
+    },
+    {
+      "viewport": "1280x800",
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "height": 7659,
+      "menu": "none",
+      "panels": 1,
+      "h1": 1,
+      "brokenImages": 0,
+      "words": 541,
+      "dom": 282,
+      "overflow": false
+    },
+    {
+      "viewport": "1440x900",
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "height": 8276,
+      "menu": "none",
+      "panels": 1,
+      "h1": 1,
+      "brokenImages": 0,
+      "words": 541,
+      "dom": 282,
+      "overflow": false
+    },
+    {
+      "viewport": "1920x1080",
+      "clientWidth": 1920,
+      "scrollWidth": 1920,
+      "height": 8418,
+      "menu": "none",
+      "panels": 1,
+      "h1": 1,
+      "brokenImages": 0,
+      "words": 541,
+      "dom": 282,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "interactions": {
+    "skipFocused": "Skip to main content",
+    "skipTarget": {
+      "hash": "#main",
+      "active": "main"
+    },
+    "menuOpen": {
+      "expanded": "true",
+      "locked": true,
+      "focus": "Product"
+    },
+    "menuClosed": {
+      "expanded": "false",
+      "locked": false,
+      "focus": "Menu"
+    },
+    "clickTab": "04Community",
+    "arrowTab": {
+      "selected": "03Portfolio",
+      "active": "03Portfolio"
+    }
+  },
+  "noJs": {
+    "panels": 4,
+    "navLinks": 5,
+    "jsClass": false,
+    "menuToggle": "none"
+  },
+  "imagesBlocked": {
+    "h1": "Explore the market. Practice investing. See the full picture.",
+    "captions": 5,
+    "visibleText": 3845
+  },
+  "reducedMotion": {
+    "preference": true,
+    "heroAnimation": "1e-05s",
+    "scrollBehavior": "auto"
+  },
+  "demo": {
+    "title": "TradeHub isolated demo",
+    "app": true,
+    "dialog": true,
+    "demoLabel": false,
+    "externalRequests": []
+  },
+  "performance": {
+    "390x844": {
+      "medianLcpMs": 76,
+      "medianCls": 0,
+      "runs": [
+        {
+          "lcp": 76,
+          "cls": 0
+        },
+        {
+          "lcp": 76,
+          "cls": 0
+        },
+        {
+          "lcp": 72,
+          "cls": 0
+        }
+      ]
+    },
+    "1440x900": {
+      "medianLcpMs": 96,
+      "medianCls": 0,
+      "runs": [
+        {
+          "lcp": 92,
+          "cls": 0
+        },
+        {
+          "lcp": 100,
+          "cls": 0
+        },
+        {
+          "lcp": 96,
+          "cls": 0
+        }
+      ]
+    }
+  }
+}

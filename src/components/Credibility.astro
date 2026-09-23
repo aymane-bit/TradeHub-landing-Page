@@ -3,32 +3,24 @@ import { credibility } from '../content/site';
 ---
 
 <section
-  class="story-section credibility-section"
-  id="experience"
-  aria-labelledby="experience-title"
+  class="section credibility"
+  id="credibility"
+  aria-labelledby="credibility-title"
 >
-  <div class="container">
-    <header class="credibility-introduction">
-      <div class="section-introduction">
-        <p class="section-eyebrow">{credibility.eyebrow}</p>
-        <h2 id="experience-title">{credibility.headline}</h2>
-      </div>
-      <p class="section-lead">{credibility.introduction}</p>
+  <div class="container credibility-grid">
+    <header class="section-heading reveal">
+      <p class="section-label">{credibility.eyebrow}</p>
+      <h2 id="credibility-title">{credibility.headline}</h2>
     </header>
-
     <ol class="achievement-list">
       {credibility.achievements.map((achievement) => (
-        <li>
-          <span class="item-number" aria-hidden="true">
-            {achievement.number}
-          </span>
+        <li class="reveal">
+          <span class="achievement-number">{achievement.number}</span>
           <h3>{achievement.title}</h3>
           <p class="achievement-attribution">{achievement.attribution}</p>
-          <p>{achievement.description}</p>
+          <p class="achievement-qualification">{achievement.qualification}</p>
         </li>
       ))}
     </ol>
-
-    <p class="achievement-clarification">{credibility.clarification}</p>
   </div>
 </section>
