@@ -13,8 +13,12 @@ contactForm?.addEventListener('submit', (event) => {
   const body = encodeURIComponent(
     `Name: ${name}\nEmail: ${email}\n\n${message}`,
   );
-  window.location.href = `${contactForm.action}?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:${contactForm.dataset.contactEmail}?subject=${subject}&body=${body}`;
 });
+const contactSubmit = contactForm?.querySelector<HTMLButtonElement>(
+  '[data-contact-submit]',
+);
+if (contactSubmit) contactSubmit.disabled = false;
 
 const header = document.querySelector<HTMLElement>('[data-site-header]');
 const menuToggle =

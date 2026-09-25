@@ -31,9 +31,8 @@ import { contact, site } from '../content/site';
       </div>
       <form
         class="contact-form"
-        action={`mailto:${site.contactEmail}`}
-        method="post"
-        enctype="text/plain"
+        method="dialog"
+        data-contact-email={site.contactEmail}
         data-contact-form
       >
         <div class="contact-fields">
@@ -66,10 +65,17 @@ import { contact, site } from '../content/site';
             type="submit"
             class="button button-signal"
             aria-describedby="contact-note"
+            disabled
+            data-contact-submit
           >
             {contact.action}
           </button>
           <p id="contact-note">{contact.note}</p>
+          <noscript>
+            <p>
+              Enable JavaScript to prepare a draft, or use the email link above.
+            </p>
+          </noscript>
         </div>
       </form>
     </div>
